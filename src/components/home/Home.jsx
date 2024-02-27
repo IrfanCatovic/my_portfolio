@@ -1,5 +1,6 @@
 import "./home.css";
 import Me from "../../assests/selfie.png";
+import HeaderSocials from "./HeaderSocials";
 
 function Home() {
   return (
@@ -10,6 +11,8 @@ function Home() {
         <span className="home_education">
           I'm a full stack developer and graphic designer
         </span>
+
+        <HeaderSocials />
       </div>
     </section>
   );
