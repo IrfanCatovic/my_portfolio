@@ -2,6 +2,7 @@ import "./home.css";
 import Me from "../../assests/selfie.png";
 import HeaderSocials from "./HeaderSocials";
 import ScrollDown from "./ScrollDown";
+import Shapes from "./Shapes";
 
 function Home() {
   return (
@@ -20,6 +21,7 @@ function Home() {
         </a>
         <ScrollDown />
       </div>
+      <Shapes />
     </section>
   );
 }
