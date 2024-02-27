@@ -54,6 +54,12 @@ function Sidebar() {
           </ul>
         </div>
       </nav>
+
+      <div className="nav_footer">
+        <span className="copyright">
+          All rights are reserved by ME ! - 2023.
+        </span>
+      </div>
     </aside>
   );
 }
