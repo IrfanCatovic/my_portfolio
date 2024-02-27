@@ -3,7 +3,7 @@ import Logo from "../../assests/logo.svg";
 
 function Sidebar() {
   return (
-    <aside>
+    <aside className="aside">
       <a href="home" classname="nav_logo">
         <img src={Logo} alt="" />
       </a>
