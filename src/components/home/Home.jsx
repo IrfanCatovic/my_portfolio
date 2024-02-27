@@ -1,6 +1,7 @@
 import "./home.css";
 import Me from "../../assests/selfie.png";
 import HeaderSocials from "./HeaderSocials";
+import ScrollDown from "./ScrollDown";
 
 function Home() {
   return (
@@ -13,6 +14,11 @@ function Home() {
         </span>
 
         <HeaderSocials />
+
+        <a href="#contact" className="btn">
+          Hire Me!
+        </a>
+        <ScrollDown />
       </div>
     </section>
   );

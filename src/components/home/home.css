@@ -1,4 +1,40 @@
+.home {
+  position: relative;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.intro {
+  max-width: 540px;
+  text-align: center;
+}
 .home_img {
   height: 108px;
   width: 108px;
+  margin-bottom: 1.5rem;
+}
+
+.home_name {
+  font-size: var(--h1-font-size);
+  font-weight: var(--font-bold);
+  margin-bottom: 0.5rem;
+}
+
+.home_socials {
+  display: flex;
+  column-gap: 1.75rem;
+  margin: 1.5rem 0;
+  justify-content: center;
+}
+
+.home_socials-link {
+  color: varA(--title-color);
+  font-size: 1.3rem;
+  transition: 0.3s;
+}
+
+.home_socials-link:hover {
+  color: hsl(43, 100%, 68%);
 }
