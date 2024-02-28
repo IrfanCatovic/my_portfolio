@@ -1,12 +1,15 @@
 import "./about.css";
 import avt2 from "../../assests/avatar-2.svg";
+import AboutBox from "./AboutBox";
 
 function About() {
   return (
     <section className="about container section" id="about">
       <h2 className="section_title">About Me</h2>
+
       <div className="about_countainer grid">
         <img src={avt2} alt="" className="about_img" />
+
         <div className="about_data grid">
           <div className="about_info">
             <p className="about_description">
@@ -28,10 +31,10 @@ function About() {
             <div className="skills_data">
               <div className="skills_titles">
                 <h3 className="skills name">Web Development</h3>
-                <span className="skills number development">100%</span>
+                <span className="skills number">100%</span>
               </div>
               <div className="skills_bar">
-                <span className="skills_percantege"></span>
+                <span className="skills_percentage development"></span>
               </div>
             </div>
 
@@ -41,7 +44,7 @@ function About() {
                 <span className="skills number">90%</span>
               </div>
               <div className="skills_bar">
-                <span className="skills_percantege ui_design"></span>
+                <span className="skills_percentage ui_design"></span>
               </div>
             </div>
 
@@ -51,12 +54,14 @@ function About() {
                 <span className="skills number">90%</span>
               </div>
               <div className="skills_bar">
-                <span className="skills_percantege"></span>
+                <span className="skills_percentage photography"></span>
               </div>
             </div>
           </div>
         </div>
       </div>
+
+      <AboutBox />
     </section>
   );
 }

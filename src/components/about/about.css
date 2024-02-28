@@ -47,3 +47,36 @@
 .skills_bar {
   background-color: #f1f1f1;
 }
+
+.skills_percentage {
+  display: block;
+  background-color: var(--first-color);
+}
+.development {
+  width: 100%;
+  background-color: rgb(255, 92, 92);
+}
+.ui_design {
+  width: 90%;
+  background-color: rgb(95, 92, 255);
+}
+.photography {
+  width: 90%;
+  background-color: rgb(95, 255, 92);
+}
+
+.about_boxes {
+  grid-template-columns: repeat(3, 1fr);
+  column-gap: 2.325rem;
+  margin-top: 4.25rem;
+}
+
+.about_box {
+  display: flex;
+  column-gap: 24px;
+}
+
+.about_icon {
+  font-size: var(--h1-font-size);
+  color: #a20000;
+}
