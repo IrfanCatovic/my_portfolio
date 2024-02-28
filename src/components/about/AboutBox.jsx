@@ -14,7 +14,7 @@ function AboutBox() {
         <i className="about_icon icon-cup"></i>
 
         <div>
-          <h3 className="about_title">4353</h3>
+          <h3 className="about_title">4300+</h3>
           <span className="about_subtitle">Cup of coffee</span>
         </div>
       </div>

@@ -68,7 +68,7 @@
 .about_boxes {
   grid-template-columns: repeat(3, 1fr);
   column-gap: 2.325rem;
-  margin-top: 4.25rem;
+  margin-top: 4.35rem;
 }
 
 .about_box {
@@ -79,4 +79,8 @@
 .about_icon {
   font-size: var(--h1-font-size);
   color: #a20000;
+}
+
+.about_title {
+  font-size: 1.875rem;
 }
