@@ -4,7 +4,7 @@ function HeaderSocials() {
       <a
         href="https://www.instagram.com/irfan.catovic/"
         className="home_socials-link"
-        target="_blank"
+        target="https://www.instagram.com/irfan.catovic/"
         rel="noreferrer"
       >
         <i class="fa-brands fa-instagram"></i>
@@ -16,7 +16,7 @@ function HeaderSocials() {
         target="_blank"
         rel="noreferrer"
       >
-        <i class="fa-brands fa-facebook"></i>
+        <i className="fab fa-facebook"></i>
       </a>
 
       <a

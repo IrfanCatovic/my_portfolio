@@ -21,7 +21,7 @@ function Home() {
         </a>
         <ScrollDown />
       </div>
-      <Shapes />
+      <Shapes className="shapes" />
     </section>
   );
 }

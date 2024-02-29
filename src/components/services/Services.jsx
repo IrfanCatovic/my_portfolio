@@ -9,14 +9,14 @@ const data = [
     image: Image2,
     title: "Web Development",
     description:
-      "Lorem ipsum dolor sit amet consectetuer adipiscing elit         aenean commodo ligula eget.",
+      "With expertise in React.js, HTML, CSS, and .NET, I craft dynamic and responsive web solutions that seamlessly blend innovation and functionality",
   },
   {
     id: 1,
     image: Image1,
     title: "UI/UX design",
     description:
-      "Lorem ipsum dolor sit amet consectetuer adipiscing elit         aenean commodo ligula eget.",
+      "Passionate about creating engaging and user-centric designs, I leverage my skills in UI/UX to transform ideas into visually stunning and intuitively navigable digital experiences.",
   },
 
   {
@@ -24,7 +24,7 @@ const data = [
     image: Image3,
     title: "Videography",
     description:
-      "Lorem ipsum dolor sit amet consectetuer adipiscing elit         aenean commodo ligula eget.",
+      "In the realm of video editing, I bring stories to life by combining technical prowess with creative flair, ensuring each frame resonates with the intended message and captivates the audience.",
   },
 ];
 

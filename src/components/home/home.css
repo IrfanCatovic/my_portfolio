@@ -153,3 +153,6 @@
   bottom: 10%;
   right: 2%;
 }
+.shapes {
+  z-index: -1;
+}
