@@ -27,13 +27,15 @@ function Resume() {
         <div className="timeline grid">
           {Data.map((val, index) => {
             if (val.category === "experience") {
-              <Card
-                key={index}
-                icon={val.icon}
-                title={val.title}
-                year={val.year}
-                desc={val.desc}
-              />;
+              return (
+                <Card
+                  key={index}
+                  icon={val.icon}
+                  title={val.title}
+                  year={val.year}
+                  desc={val.desc}
+                />
+              );
             }
           })}
         </div>

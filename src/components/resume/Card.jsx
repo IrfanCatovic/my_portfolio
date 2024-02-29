@@ -2,7 +2,7 @@ function Card(props) {
   console.log("CARD");
   return (
     <div className="timeline_item">
-      <i>{props.icon}</i>
+      <i className={props.icon}></i>
       <span className="timeline_date">{props.year}</span>
       <h3 className="timeline_title">{props.title}</h3>
       <p className="timeline_text">{props.desc}</p>
