@@ -14,16 +14,15 @@ function About() {
           <div className="about_info">
             <p className="about_description">
               I am a dynamic and versatile professional with a rich background
-              in various roles. Over nearly two years, I've dedicated myself to
-              software development, specializing in backend development with the
-              .NET framework. In addition to my technical proficiency, I've
-              expanded my skill set to include frontend development as a React
-              developer, demonstrating my adaptability in diverse technology
-              stacks. Moreover, I bring a creative flair to my work, having
-              successfully served as a graphic designer and video editor. My
-              commitment to innovation and excellence, coupled with a diverse
-              skill set, positions me as a valuable asset to any team or
-              project.
+              in various roles, dedicating nearly two years to software
+              development. Specializing in backend development with the .NET
+              framework, I've seamlessly transitioned into frontend development
+              as a React developer, showcasing adaptability across diverse
+              technology stacks. Beyond my technical prowess, I bring a creative
+              flair, having excelled as a graphic designer and video editor.
+              Committed to innovation and excellence, my diverse skill set
+              positions me as a valuable asset to any team or project, blending
+              technical proficiency with creative ingenuity.
             </p>
             <a href="" className="btn">
               Download CV
