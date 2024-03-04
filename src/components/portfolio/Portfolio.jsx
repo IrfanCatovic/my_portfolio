@@ -5,16 +5,34 @@ import { useState } from "react";
 function Portfolio() {
   const [items, setItems] = useState(Menu);
 
+  const filterItem = (categoryItem) => {
+    const updatedItem = Menu.filter((curEl) => {
+      return curEl.category === categoryItem;
+    });
+
+    setItems(updatedItem);
+  };
+
   return (
     <section className="work container section" id="work">
       <h2 className="section_title">Recent Works</h2>
 
       <div className="work_filters">
-        <span className="work_item">Everything</span>
-        <span className="work_item">Creative</span>
-        <span className="work_item">Art</span>
-        <span className="work_item">Design</span>
-        <span className="work_item">Branding</span>
+        <span className="work_item" onClick={() => setItems(Menu)}>
+          Everything
+        </span>
+        <span className="work_item" onClick={() => filterItem("Development")}>
+          Development
+        </span>
+        <span className="work_item" onClick={() => filterItem("Art")}>
+          Art
+        </span>
+        <span className="work_item" onClick={() => filterItem("Design")}>
+          Design
+        </span>
+        <span className="work_item" onClick={() => filterItem("Branding")}>
+          Branding
+        </span>
       </div>
 
       <div className="work_container grid">
