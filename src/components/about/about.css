@@ -52,10 +52,12 @@
   display: block;
   background-color: var(--first-color);
 }
+
 .development {
   width: 100%;
   background-color: rgb(255, 92, 92);
 }
+
 .ui_design {
   width: 90%;
   background-color: rgb(95, 92, 255);
