@@ -41,12 +41,6 @@ function Sidebar() {
             </li>
 
             <li className="nav_item">
-              <a href="#blog" className="nav_link">
-                <i className="icon-note"></i>
-              </a>
-            </li>
-
-            <li className="nav_item">
               <a href="#contact" className="nav_link">
                 <i className="icon-bubble"></i>
               </a>
