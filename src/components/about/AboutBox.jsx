@@ -5,7 +5,7 @@ function AboutBox() {
         <i className="about_icon icon-fire"></i>
 
         <div>
-          <h3 className="about_title">140+</h3>
+          <h3 className="about_title">250+</h3>
           <span className="about_subtitle">Project completed</span>
         </div>
       </div>
@@ -22,7 +22,7 @@ function AboutBox() {
         <i className="about_icon icon-people"></i>
 
         <div>
-          <h3 className="about_title">300+</h3>
+          <h3 className="about_title">200+</h3>
           <span className="about_subtitle">Satisfied clients</span>
         </div>
       </div>
