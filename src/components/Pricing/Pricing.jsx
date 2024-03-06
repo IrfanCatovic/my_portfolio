@@ -23,7 +23,8 @@ function Pricing() {
           </a>
         </div>
 
-        <div className="pricing_item">
+        <div className="pricing_item best">
+          <span className="badge">Recommended</span>
           <img src={Image2} alt="" className="pricing_img" />
           <h3 className="pricing_plan">Premium</h3>
           <p className="pricing_title">
