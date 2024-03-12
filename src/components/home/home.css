@@ -161,4 +161,7 @@
   .home_social-link {
     font-size: 1.125rem;
   }
+  .home {
+    width: 380px;
+  }
 }
