@@ -31,7 +31,7 @@ function About() {
           <div className="about_skills grid">
             <div className="skills_data">
               <div className="skills_titles">
-                <h3 className="skills name">Web Development</h3>
+                <h3 className="skills name">Front end - React</h3>
                 <span className="skills number">100%</span>
               </div>
               <div className="skills_bar">
@@ -56,6 +56,16 @@ function About() {
               </div>
               <div className="skills_bar">
                 <span className="skills_percentage photography"></span>
+              </div>
+            </div>
+
+            <div className="skills_data">
+              <div className="skills_titles">
+                <h3 className="skills name">Back end - Nest JS</h3>
+                <span className="skills number">50%</span>
+              </div>
+              <div className="skills_bar">
+                <span className="skills_percentage back_end"></span>
               </div>
             </div>
           </div>

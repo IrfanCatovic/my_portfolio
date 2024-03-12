@@ -66,6 +66,10 @@
   width: 90%;
   background-color: rgb(95, 255, 92);
 }
+.back_end {
+  width: 50%;
+  background-color: rgb(247, 243, 42);
+}
 
 .about_boxes {
   grid-template-columns: repeat(3, 1fr);
@@ -130,5 +134,21 @@
     grid-template-columns: repeat(2, 150px);
     row-gap: 1.5rem;
     justify-content: center;
+  }
+}
+
+@media screen and (max-width: 576px) {
+  .about_countainer {
+    grid-template-columns: 320px;
+  }
+}
+
+@media screen and (max-width: 350px) {
+  .about_countainer {
+    grid-template-columns: 1fr;
+  }
+
+  .about_boxes {
+    grid-template-columns: 1fr;
   }
 }
