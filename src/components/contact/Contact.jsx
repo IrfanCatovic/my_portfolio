@@ -8,6 +8,7 @@ function Contact() {
         <div className="contact_info">
           <h3 className="contact_title">Feel free to talk to me! 👋</h3>
           <p className="contact_details">You can even send me an email. ✉</p>
+          <p className="contact_details">Email: catovicc84@gmail.com</p>
         </div>
 
         <form action="" className="contact_form">

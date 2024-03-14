@@ -53,8 +53,18 @@
   background-color: var(--first-color);
 }
 
-.development {
+.frontend {
   width: 100%;
+  background-color: rgb(255, 92, 92);
+}
+
+.HTML {
+  width: 90%;
+  background-color: rgb(255, 92, 92);
+}
+
+.CSS {
+  width: 90%;
   background-color: rgb(255, 92, 92);
 }
 

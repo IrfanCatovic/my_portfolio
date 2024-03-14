@@ -24,9 +24,6 @@ function About() {
               positions me as a valuable asset to any team or project, blending
               technical proficiency with creative ingenuity.
             </p>
-            <a href="" className="btn">
-              Download CV
-            </a>
           </div>
           <div className="about_skills grid">
             <div className="skills_data">
@@ -35,13 +32,33 @@ function About() {
                 <span className="skills number">100%</span>
               </div>
               <div className="skills_bar">
-                <span className="skills_percentage development"></span>
+                <span className="skills_percentage frontend"></span>
               </div>
             </div>
 
             <div className="skills_data">
               <div className="skills_titles">
-                <h3 className="skills name">Graphic design</h3>
+                <h3 className="skills name">HTML</h3>
+                <span className="skills number">90%</span>
+              </div>
+              <div className="skills_bar">
+                <span className="skills_percentage HTML"></span>
+              </div>
+            </div>
+
+            <div className="skills_data">
+              <div className="skills_titles">
+                <h3 className="skills name">CSS</h3>
+                <span className="skills number">90%</span>
+              </div>
+              <div className="skills_bar">
+                <span className="skills_percentage CSS"></span>
+              </div>
+            </div>
+
+            <div className="skills_data">
+              <div className="skills_titles">
+                <h3 className="skills name">Video editing- Premiere pro</h3>
                 <span className="skills number">90%</span>
               </div>
               <div className="skills_bar">
@@ -51,11 +68,11 @@ function About() {
 
             <div className="skills_data">
               <div className="skills_titles">
-                <h3 className="skills name">Video editing</h3>
+                <h3 className="skills name">Photoshop, Illustrator & Figma</h3>
                 <span className="skills number">90%</span>
               </div>
               <div className="skills_bar">
-                <span className="skills_percentage photography"></span>
+                <span className="skills_percentage ui_design"></span>
               </div>
             </div>
 
