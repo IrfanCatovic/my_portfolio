@@ -1,3 +1,4 @@
+/* eslint-disable jsx-a11y/iframe-has-title */
 import "./home.css";
 import Me from "../../assests/selfie.png";
 import HeaderSocials from "./HeaderSocials";

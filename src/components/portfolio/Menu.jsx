@@ -1,9 +1,10 @@
 import Work1 from "../../assests/Artboard 1.jpg";
-import Work2 from "../../assests/work-2.svg";
-import Work3 from "../../assests/work-3.svg";
+import Work2 from "../../assests/popcorn.JPG";
+import Work3 from "../../assests/dicegame.JPG";
 import Work4 from "../../assests/work-4.jpg";
 import Work5 from "../../assests/logo_create.png";
-import Work6 from "../../assests/work-6.svg";
+import Work6 from "../../assests/travel.JPG";
+import Work7 from "../../assests/Work7.JPG";
 
 // eslint-disable-next-line no-sparse-arrays
 const Menu = [
@@ -17,15 +18,16 @@ const Menu = [
   {
     id: 2,
     image: Work2,
-    title: "Photo and Video Editing",
-    category: "Art",
-    link: "https://irfancatovic.my.canva.site/have-fun",
+    title: "IMDB website",
+    category: "Development",
+    link: "https://movideappimdb.netlify.app/",
   },
   {
     id: 3,
     image: Work3,
-    title: "Creating Plans for Social Medias",
-    category: "Branding",
+    title: "First 15 roll game",
+    category: "Development",
+    link: "https://first15game.netlify.app/",
   },
   ,
   {
@@ -38,7 +40,7 @@ const Menu = [
   {
     id: 5,
     image: Work5,
-    title: "Logo Design and Create",
+    title: "Logo Design and Create, Video and photo editing",
     category: "Design",
     link: "https://irfancatovic.my.canva.site/have-fun",
   },
@@ -46,8 +48,16 @@ const Menu = [
   {
     id: 6,
     image: Work6,
-    title: "Web Design in Figma",
-    category: "Art",
+    title: "TODO for travel list",
+    category: "Development",
+    link: "https://travellisttodo.netlify.app/",
+  },
+  {
+    id: 7,
+    image: Work7,
+    title: "TRAVEL MAP",
+    category: "Development",
+    link: "https://worldwiseic.netlify.app/",
   },
 ];
 
