@@ -44,7 +44,7 @@ const Data = [
     category: "experience",
     icon: "icon-briefcase",
     year: "2020 - 2023",
-    title: "Graphic designer - video editor",
+    title: "Graphic designer & video editor",
     desc: "Studio Hane Luxembourg - I shaped captivating visual stories, guiding the post-production process to deliver compelling content that consistently exceeded client expectations.",
   },
 
