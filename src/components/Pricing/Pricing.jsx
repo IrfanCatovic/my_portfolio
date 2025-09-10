@@ -18,7 +18,7 @@ function Pricing() {
           <h3 className="price">
             <em>$</em> 9 <span>Month</span>
           </h3>
-          <a href="#" className="btn">
+          <a href="/pricing" className="btn">
             Get Started
           </a>
         </div>
@@ -35,7 +35,7 @@ function Pricing() {
           <h3 className="price">
             <em>$</em> 15 <span>Month</span>
           </h3>
-          <a href="#" className="btn">
+          <a href="/pricing" className="btn">
             Get Started
           </a>
         </div>
@@ -50,7 +50,7 @@ function Pricing() {
           <h3 className="price">
             <em>$</em> 19 <span>Month</span>
           </h3>
-          <a href="#" className="btn">
+          <a href="/pricing" className="btn">
             Get Started
           </a>
         </div>
