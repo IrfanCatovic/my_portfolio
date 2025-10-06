@@ -9,7 +9,7 @@ const data = [
     image: Image2,
     title: "Web Development",
     description:
-      "With expertise in React.js, HTML, CSS, and .NET, I craft dynamic and responsive web solutions that seamlessly blend innovation and functionality",
+      "With expertise in React.js and GoLang, I build fast, scalable, and modern web applications that combine powerful backend logic with elegant and responsive frontend experiences",
   },
   {
     id: 1,

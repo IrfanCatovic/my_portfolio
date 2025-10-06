@@ -13,19 +13,30 @@ function About() {
         <div className="about_data grid">
           <div className="about_info">
             <p className="about_description">
-              I am a dynamic and versatile professional with a rich background
-              in various roles, dedicating nearly two years to software
-              development. Specializing in backend development with the .NET
-              framework, I've seamlessly transitioned into frontend development
-              as a React developer, showcasing adaptability across diverse
-              technology stacks. Beyond my technical prowess, I bring a creative
-              flair, having excelled as a graphic designer and video editor.
-              Committed to innovation and excellence, my diverse skill set
-              positions me as a valuable asset to any team or project, blending
-              technical proficiency with creative ingenuity.
+              I am a passionate and adaptable developer with strong expertise in
+              React and Golang, building fast, scalable, and user-focused web
+              applications. My journey started in .NET backend development,
+              where I gained a solid understanding of system architecture and
+              data management, but over time, my focus shifted toward modern
+              frontend and full-stack development. I enjoy crafting clean,
+              responsive interfaces and connecting them with efficient backend
+              logic. Alongside coding, I bring a creative edge from my
+              background in graphic design and video production, allowing me to
+              merge technical precision with visual storytelling. Driven by
+              growth and innovation, I constantly seek to improve my skills and
+              deliver impactful digital experiences.
             </p>
           </div>
           <div className="about_skills grid">
+            <div className="skills_data">
+              <div className="skills_titles">
+                <h3 className="skills name">Back end - GOLANG</h3>
+                <span className="skills number">100%</span>
+              </div>
+              <div className="skills_bar">
+                <span className="skills_percentage back_end"></span>
+              </div>
+            </div>
             <div className="skills_data">
               <div className="skills_titles">
                 <h3 className="skills name">Front end - React</h3>
@@ -38,7 +49,7 @@ function About() {
 
             <div className="skills_data">
               <div className="skills_titles">
-                <h3 className="skills name">HTML</h3>
+                <h3 className="skills name">MaterialUI</h3>
                 <span className="skills number">90%</span>
               </div>
               <div className="skills_bar">
@@ -48,7 +59,27 @@ function About() {
 
             <div className="skills_data">
               <div className="skills_titles">
-                <h3 className="skills name">CSS</h3>
+                <h3 className="skills name">Tailwind</h3>
+                <span className="skills number">90%</span>
+              </div>
+              <div className="skills_bar">
+                <span className="skills_percentage CSS"></span>
+              </div>
+            </div>
+
+            <div className="skills_data">
+              <div className="skills_titles">
+                <h3 className="skills name">Bootstrap</h3>
+                <span className="skills number">90%</span>
+              </div>
+              <div className="skills_bar">
+                <span className="skills_percentage CSS"></span>
+              </div>
+            </div>
+
+            <div className="skills_data">
+              <div className="skills_titles">
+                <h3 className="skills name">Typescript</h3>
                 <span className="skills number">90%</span>
               </div>
               <div className="skills_bar">
@@ -68,21 +99,11 @@ function About() {
 
             <div className="skills_data">
               <div className="skills_titles">
-                <h3 className="skills name">Photoshop, Illustrator & Figma</h3>
+                <h3 className="skills name">Figma, Photoshop, Illustrator </h3>
                 <span className="skills number">90%</span>
               </div>
               <div className="skills_bar">
                 <span className="skills_percentage ui_design"></span>
-              </div>
-            </div>
-
-            <div className="skills_data">
-              <div className="skills_titles">
-                <h3 className="skills name">Back end - Nest JS</h3>
-                <span className="skills number">50%</span>
-              </div>
-              <div className="skills_bar">
-                <span className="skills_percentage back_end"></span>
               </div>
             </div>
           </div>

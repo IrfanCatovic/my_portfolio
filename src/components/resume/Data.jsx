@@ -54,7 +54,7 @@ const Data = [
     icon: "icon-briefcase",
     year: "2023 - present",
     title: "Full Stack Developer React/.NET ",
-    desc: "ILM education center - I surf the waves of frontend innovation, working alongside a vibrant team to cultivate engaging user interfaces and contribute to the collective knowledge, turning every coding challenge into an opportunity for growth.",
+    desc: "ILM Education Center – Worked on projects using React for the frontend and GoLang for the backend, where I built dynamic interfaces, integrated APIs, and improved my understanding of full-stack development. This experience strengthened my problem-solving skills and deepened my knowledge of building efficient, scalable web applications.",
   },
 ];
 
