@@ -13,18 +13,20 @@ function About() {
         <div className="about_data grid">
           <div className="about_info">
             <p className="about_description">
-              I am a passionate and adaptable developer with strong expertise in
-              React and Golang, building fast, scalable, and user-focused web
-              applications. My journey started in .NET backend development,
-              where I gained a solid understanding of system architecture and
-              data management, but over time, my focus shifted toward modern
-              frontend and full-stack development. I enjoy crafting clean,
-              responsive interfaces and connecting them with efficient backend
-              logic. Alongside coding, I bring a creative edge from my
-              background in graphic design and video production, allowing me to
-              merge technical precision with visual storytelling. Driven by
-              growth and innovation, I constantly seek to improve my skills and
-              deliver impactful digital experiences.
+              I’m a passionate and adaptable frontend developer with strong
+              expertise in React, focused on building fast, responsive, and
+              user-centered web applications. Over the years, I’ve refined my
+              skills in crafting clean interfaces, intuitive layouts, and
+              seamless user experiences. Recently, I began expanding my stack by
+              learning and developing backend services with Golang, aiming to
+              strengthen my full-stack capabilities. My journey started in .NET
+              backend development, where I gained a solid understanding of
+              system architecture and data management, which now helps me
+              structure efficient and maintainable web solutions. Beyond coding,
+              my background in graphic design and video production gives me a
+              creative edge. I enjoy blending technical precision with visual
+              storytelling to create engaging digital experiences. Driven by
+              curiosity and growth.
             </p>
           </div>
           <div className="about_skills grid">

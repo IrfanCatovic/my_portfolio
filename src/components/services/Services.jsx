@@ -16,7 +16,7 @@ const data = [
     image: Image1,
     title: "UI/UX design",
     description:
-      "Passionate about creating engaging and user-centric designs, I leverage my skills in UI/UX to transform ideas into visually stunning and intuitively navigable digital experiences.",
+      "Passionate about creating engaging and user-centric designs, I leverage my UI/UX and Figma skills to transform ideas into visually stunning and intuitively navigable digital experiences.",
   },
 
   {

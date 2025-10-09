@@ -32,12 +32,20 @@ const Data = [
     desc: "Finished",
   },
   {
-    id: 5,
+    id: 7,
     category: "experience",
     icon: "icon-briefcase",
-    year: "2019 - 2020 ",
-    title: "Back end developer .NET ",
-    desc: "Klaster NIT Novi Pazar -  I collaborated with a talented team of developers, soaking in knowledge and honing my skills in the dynamic, collaborative environment, contributing to the seamless creation of solutions that navigate the digital world with ease. ",
+    year: "2023 - present",
+    title: "Full Stack Developer React/Go",
+    desc: "ILM Education Center – Focused primarily on frontend development using React, building dynamic and responsive interfaces while designing intuitive user experiences. Integrated APIs and collaborated on application architecture, and in recent months began working with Golang to develop backend services, expanding my full-stack development skills. This experience strengthened my problem-solving abilities and provided hands-on insight into building efficient, scalable web applications.",
+  },
+  {
+    id: 6,
+    category: "experience",
+    icon: "icon-briefcase",
+    year: "Feb 2025 - Jun 2025",
+    title: "Creative Designer & Video Editor ",
+    desc: "Pester TV – Managed post-production workflow, led YouTube and social media content strategy, and redesigned broadcast visuals to enhance quality, efficiency, and audience engagement.",
   },
   {
     id: 4,
@@ -47,14 +55,13 @@ const Data = [
     title: "Graphic designer & video editor",
     desc: "Studio Hane Luxembourg - I shaped captivating visual stories, guiding the post-production process to deliver compelling content that consistently exceeded client expectations.",
   },
-
   {
-    id: 6,
+    id: 5,
     category: "experience",
     icon: "icon-briefcase",
-    year: "2023 - present",
-    title: "Full Stack Developer React/.NET ",
-    desc: "ILM Education Center – Worked on projects using React for the frontend and GoLang for the backend, where I built dynamic interfaces, integrated APIs, and improved my understanding of full-stack development. This experience strengthened my problem-solving skills and deepened my knowledge of building efficient, scalable web applications.",
+    year: "2019 - 2020 ",
+    title: "Back end developer .NET ",
+    desc: "Klaster NIT Novi Pazar -  I collaborated with a talented team of developers, soaking in knowledge and honing my skills in the dynamic, collaborative environment, contributing to the seamless creation of solutions that navigate the digital world with ease. ",
   },
 ];
 
