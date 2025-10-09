@@ -5,6 +5,7 @@ import Work4 from "../../assests/work-4.jpg";
 import Work5 from "../../assests/logo_create.png";
 import Work6 from "../../assests/travel.JPG";
 import Work7 from "../../assests/Work7.JPG";
+import work8 from "../../assests/work-8.JPG";
 
 // eslint-disable-next-line no-sparse-arrays
 const Menu = [
@@ -14,13 +15,24 @@ const Menu = [
     title: "Track your Ramadan and pray time for 110+ cities",
     category: "Development",
     link: "https://ramazan-tracker.vercel.app/",
+    code: "ReactJs/Golang",
   },
+  {
+    id: 8,
+    image: work8,
+    title: "Mufty Foundation",
+    category: "Development",
+    link: "https://muftyfoundation.com/",
+    code: "ReactJs/Golang",
+  },
+
   {
     id: 2,
     image: Work2,
     title: "IMDB website",
     category: "Development",
     link: "https://movideappimdb.netlify.app/",
+    code: "ReactJs",
   },
   {
     id: 3,
@@ -28,6 +40,7 @@ const Menu = [
     title: "First 15 roll game",
     category: "Development",
     link: "https://first15game.netlify.app/",
+    code: "ReactJs",
   },
   ,
   {
@@ -35,6 +48,7 @@ const Menu = [
     image: Work4,
     title: "E-commerce website",
     category: "Development",
+    code: "ReactJs",
   },
   ,
   {
@@ -43,6 +57,7 @@ const Menu = [
     title: "Logo Design and Create, Video and photo editing",
     category: "Design",
     link: "https://irfancatovic.my.canva.site/have-fun",
+    code: "Adobe Creative Apps",
   },
   ,
   {
@@ -51,6 +66,7 @@ const Menu = [
     title: "TODO for travel list",
     category: "Development",
     link: "https://travellisttodo.netlify.app/",
+    code: "ReactJs",
   },
   {
     id: 7,
@@ -58,6 +74,7 @@ const Menu = [
     title: "TRAVEL MAP",
     category: "Development",
     link: "https://worldwiseic.netlify.app/",
+    code: "ReactJs",
   },
 ];
 
