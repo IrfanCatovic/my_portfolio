@@ -6,6 +6,7 @@ import Work5 from "../../assests/logo_create.png";
 import Work6 from "../../assests/travel.JPG";
 import Work7 from "../../assests/Work7.JPG";
 import work8 from "../../assests/work-8.JPG";
+import work9 from "../../assests/mokum.JPG";
 
 // eslint-disable-next-line no-sparse-arrays
 const Menu = [
@@ -67,6 +68,15 @@ const Menu = [
     category: "Development",
     link: "https://travellisttodo.netlify.app/",
     code: "ReactJs",
+  },
+
+  {
+    id: 6,
+    image: work9,
+    title: "MOKUM online menu",
+    category: "Development",
+    link: "https://mokum.netlify.app/",
+    code: "ReactJs, Css",
   },
   {
     id: 7,
