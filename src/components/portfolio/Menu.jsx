@@ -7,6 +7,7 @@ import Work6 from "../../assests/travel.JPG";
 import Work7 from "../../assests/Work7.JPG";
 import work8 from "../../assests/work-8.JPG";
 import work9 from "../../assests/mokum.JPG";
+import work10 from "../../assests/work10.PNG";
 
 // eslint-disable-next-line no-sparse-arrays
 const Menu = [
@@ -16,7 +17,7 @@ const Menu = [
     title: "Track your Ramadan and pray time for 110+ cities",
     category: "Development",
     link: "https://ramazan-tracker.vercel.app/",
-    code: "ReactJs/Golang",
+    code: "ReactJs/Golang/Tailwind/LocalStorage",
   },
   {
     id: 8,
@@ -24,7 +25,15 @@ const Menu = [
     title: "Mufty Foundation",
     category: "Development",
     link: "https://muftyfoundation.com/",
-    code: "ReactJs/Golang",
+    code: "ReactJs/Golang/TailwindCSS/ContextAPI",
+  },
+  {
+    id: 8,
+    image: work10,
+    title: "Online pizza ordering App",
+    category: "Development",
+    link: "https://pizzaorderreactjs.netlify.app/",
+    code: "ReactJs/TailwindCSS/ReactRouter/Redux",
   },
 
   {
@@ -33,7 +42,7 @@ const Menu = [
     title: "IMDB website",
     category: "Development",
     link: "https://movideappimdb.netlify.app/",
-    code: "ReactJs",
+    code: "ReactJs/ContextAPI",
   },
   {
     id: 3,
@@ -41,7 +50,7 @@ const Menu = [
     title: "First 15 roll game",
     category: "Development",
     link: "https://first15game.netlify.app/",
-    code: "ReactJs",
+    code: "ReactJs/ContextAPI/CSS",
   },
   ,
   {
@@ -49,7 +58,7 @@ const Menu = [
     image: Work4,
     title: "E-commerce website",
     category: "Development",
-    code: "ReactJs",
+    code: "ReactJs/TailwindCSS/ReactRouter/Redux",
   },
   ,
   {
@@ -67,7 +76,7 @@ const Menu = [
     title: "TODO for travel list",
     category: "Development",
     link: "https://travellisttodo.netlify.app/",
-    code: "ReactJs",
+    code: "ReactJs/ContextAPI/CSS",
   },
 
   {
@@ -76,7 +85,7 @@ const Menu = [
     title: "MOKUM online menu",
     category: "Development",
     link: "https://mokum.netlify.app/",
-    code: "ReactJs, Css",
+    code: "ReactJs/ContextAPI/CSS",
   },
   {
     id: 7,
@@ -84,7 +93,7 @@ const Menu = [
     title: "TRAVEL MAP",
     category: "Development",
     link: "https://worldwiseic.netlify.app/",
-    code: "ReactJs",
+    code: "ReactJs/TailwindCSS/ReactRouter/Redux",
   },
 ];
 
