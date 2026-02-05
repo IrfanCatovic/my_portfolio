@@ -1,16 +1,24 @@
 import Work1 from "../../assests/Artboard 1.jpg";
 import Work2 from "../../assests/popcorn.JPG";
 import Work3 from "../../assests/dicegame.JPG";
-import Work4 from "../../assests/work-4.jpg";
 import Work5 from "../../assests/logo_create.png";
 import Work6 from "../../assests/travel.JPG";
 import Work7 from "../../assests/Work7.JPG";
 import work8 from "../../assests/work-8.JPG";
 import work9 from "../../assests/mokum.JPG";
 import work10 from "../../assests/work10.PNG";
+import work11 from "../../assests/work11.png";
 
 // eslint-disable-next-line no-sparse-arrays
 const Menu = [
+  {
+    id: 4,
+    image: work11,
+    title: "E-commerce website - online shopping",
+    category: "Development",
+    link: "https://onlineshopts.netlify.app/",
+    code: "Golang/Typescript/MongoDB/Tailwind/Redux",
+  },
   {
     id: 1,
     image: Work1,
@@ -52,15 +60,6 @@ const Menu = [
     link: "https://first15game.netlify.app/",
     code: "ReactJs/ContextAPI/CSS",
   },
-  ,
-  {
-    id: 4,
-    image: Work4,
-    title: "E-commerce website",
-    category: "Development",
-    code: "ReactJs/TailwindCSS/ReactRouter/Redux",
-  },
-  ,
   {
     id: 5,
     image: Work5,
