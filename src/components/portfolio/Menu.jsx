@@ -95,15 +95,6 @@ const Menu = [
     link: "https://travellisttodo.netlify.app/",
     code: "ReactJs/ContextAPI/CSS",
   },
-
-  {
-    id: 6,
-    image: work9,
-    title: "MOKUM online menu",
-    category: "Development",
-    link: "https://mokum.netlify.app/",
-    code: "ReactJs/ContextAPI/CSS",
-  },
   {
     id: 7,
     image: Work7,
