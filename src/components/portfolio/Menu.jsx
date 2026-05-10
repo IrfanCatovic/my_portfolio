@@ -8,9 +8,27 @@ import work8 from "../../assests/work-8.JPG";
 import work9 from "../../assests/mokum.JPG";
 import work10 from "../../assests/work10.PNG";
 import work11 from "../../assests/work11.png";
+import work12 from "../../assests/work12.png";
+import work13 from "../../assests/work13.png";
 
 // eslint-disable-next-line no-sparse-arrays
 const Menu = [
+  {
+    id: 10,
+    image: work12,
+    title: "Planiner - hiking and travel management system",
+    category: "Development",
+    link: "https://planiner.com/",
+    code: "Golang/Typescript/PostgreSQL/Gorm/Tailwind/Redux",
+  },
+  {
+    id: 9,
+    image: work13,
+    title: "Smart Docs - document management system",
+    category: "Development",
+    link: "https://mastery-task-3-e58-1-e06.vercel.app/",
+    code: "Golang/Typescript/MongoDB/Tailwind/Redux",
+  },
   {
     id: 4,
     image: work11,
