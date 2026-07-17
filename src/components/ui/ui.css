@@ -1,6 +1,6 @@
 .section-heading {
-  max-width: 42rem;
-  margin-bottom: 2.5rem;
+  max-width: 44rem;
+  margin-bottom: 2rem;
 }
 
 .section-heading--center {
@@ -10,7 +10,7 @@
 }
 
 .section-heading__eyebrow {
-  margin-bottom: 0.75rem;
+  margin-bottom: 0.65rem;
   color: var(--accent);
   font-size: 0.875rem;
   font-weight: var(--font-semibold);
@@ -19,19 +19,20 @@
 }
 
 .section-heading__title {
-  margin-bottom: 0.85rem;
+  margin-bottom: 0.75rem;
   font-family: var(--display-font);
-  font-size: clamp(1.75rem, 2.4vw, 2.35rem);
+  font-size: clamp(1.85rem, 2.6vw, 2.5rem);
   font-weight: 650;
   letter-spacing: -0.03em;
   color: var(--title-color);
-  line-height: 1.15;
+  line-height: 1.12;
 }
 
 .section-heading__description {
   color: var(--text-color);
   font-size: 1.0625rem;
   line-height: 1.7;
+  max-width: 40rem;
 }
 
 .btn {
@@ -39,12 +40,12 @@
   align-items: center;
   justify-content: center;
   gap: 0.5rem;
-  min-height: 2.875rem;
-  padding: 0.75rem 1.35rem;
+  min-height: 3rem;
+  padding: 0.8rem 1.45rem;
   border: 1px solid transparent;
   border-radius: 0.625rem;
   font-family: var(--body-font);
-  font-size: 0.975rem;
+  font-size: 1rem;
   font-weight: var(--font-semibold);
   line-height: 1.2;
   text-decoration: none;
@@ -100,15 +101,15 @@
 }
 
 .btn--small {
-  min-height: 2.5rem;
-  padding: 0.55rem 1rem;
-  font-size: 0.9rem;
+  min-height: 2.625rem;
+  padding: 0.6rem 1.05rem;
+  font-size: 0.9375rem;
 }
 
 .tag {
   display: inline-flex;
   align-items: center;
-  padding: 0.35rem 0.7rem;
+  padding: 0.38rem 0.72rem;
   border: 1px solid var(--border);
   border-radius: 999px;
   background: var(--surface-muted);
@@ -122,7 +123,7 @@
   display: inline-flex;
   align-items: center;
   gap: 0.35rem;
-  padding: 0.35rem 0.7rem;
+  padding: 0.38rem 0.72rem;
   border-radius: 999px;
   font-size: 0.75rem;
   font-weight: var(--font-semibold);
@@ -149,4 +150,14 @@
   background: var(--surface-muted);
   color: var(--text-color);
   border: 1px solid var(--border);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .btn {
+    transition: none;
+  }
+
+  .btn--primary:hover:not(:disabled) {
+    transform: none;
+  }
 }

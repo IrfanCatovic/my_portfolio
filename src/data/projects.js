@@ -3,24 +3,22 @@ import muftyImg from "../assests/work-8.JPG";
 import shopImg from "../assests/work11.png";
 import ramazanImg from "../assests/Artboard 1.jpg";
 import worldwiseImg from "../assests/Work7.JPG";
-import smartDocsImg from "../assests/work13.png";
 
-export const featuredProjects = [
+export const primaryProjects = [
   {
     id: "planiner",
+    tier: "primary",
     title: "Planiner",
     category: "Full-Stack Product · Founder Project",
     status: "Live Product",
     description:
-      "A full-stack platform built from scratch for mountaineering clubs and hikers. The platform supports club organization, members, events, user profiles and operational workflows while combining product research, backend architecture, frontend development and deployment.",
+      "A full-stack platform built from scratch for mountaineering clubs and hikers — covering club organization, member and event workflows, backend architecture, REST APIs, responsive frontend and deployment.",
     role: "Founder & Full Stack Developer",
     highlights: [
       "Product structure and user-flow planning",
-      "Database and backend architecture",
-      "REST APIs and authentication",
+      "Database design, REST APIs and authentication",
       "Club, member and event workflows",
-      "Responsive frontend implementation",
-      "Deployment, debugging and continuous product improvements",
+      "Frontend implementation, deployment and ongoing improvements",
     ],
     technologies: [
       "Golang",
@@ -32,9 +30,6 @@ export const featuredProjects = [
       "JWT",
       "REST APIs",
       "Tailwind CSS",
-      "Context API",
-      "Cloudinary",
-      "Git",
       "VPS deployment",
     ],
     image: planinerImg,
@@ -46,23 +41,18 @@ export const featuredProjects = [
   },
   {
     id: "am-keramika",
+    tier: "primary",
     title: "AM Keramika — Internal Business Operations Platform",
     category: "Internal Business System",
     status: "Private Client Project · In Development",
     description:
-      "A private full-stack business operations platform built for a company working with ceramics, sanitary equipment and heating products. The system centralizes everyday operational and financial workflows in one reliable application.",
+      "A private full-stack operations platform for a ceramics and heating products company — centralizing inventory, invoicing, payments, customer debt tracking and daily financial reporting with role-based access.",
     role: "Full Stack Developer",
     highlights: [
-      "Product and category management",
-      "Stock tracking and inventory movements",
-      "Invoice creation and invoice statuses",
-      "PDF invoice and document generation",
-      "Payments and payment allocations",
-      "Customer balances and outstanding debt",
-      "Refund and invoice-cancellation workflows",
-      "Daily cash and financial reports",
+      "Product, stock and inventory management",
+      "Invoice creation, PDF generation and payment allocation",
+      "Customer balances, refunds and financial reports",
       "Role-based access for owners, managers and workers",
-      "Filtering and pagination",
     ],
     technologies: [
       "React",
@@ -72,37 +62,33 @@ export const featuredProjects = [
       "PostgreSQL",
       "GORM",
       "REST APIs",
-      "JWT authentication",
-      "Role-based access",
-      "Tailwind CSS",
+      "JWT",
       "Material UI",
       "PDF generation",
-      "Git",
     ],
     image: null,
-    imageAlt: "Abstract cover representing an internal business operations platform",
+    imageAlt: "Designed project cover for AM Keramika internal business platform",
     liveUrl: null,
     githubUrl: null,
     privateProject: true,
     coverStyle: "operations",
   },
+];
+
+export const supportingProjects = [
   {
     id: "mufty",
+    tier: "supporting",
     title: "Mufty Foundation",
     category: "Team Project · Humanitarian Platform",
     status: "Live Product",
     description:
-      "A production-focused humanitarian platform developed as part of a team at ILM Education Center. I contributed across frontend and backend development, translating designs into reusable components and connecting frontend functionality with backend services.",
+      "Production humanitarian platform built with a team at ILM Education Center — contributing React/TypeScript frontend, Golang API work, Redux Toolkit state and REST integration.",
     role: "Full Stack Developer",
     highlights: [
       "React and TypeScript components",
-      "Figma-to-code implementation",
-      "Golang API endpoint work",
-      "Redux Toolkit state management",
-      "REST API integration",
-      "Protected routes and middleware",
-      "Cloudinary media handling",
-      "Debugging and improving existing functionality",
+      "Golang API endpoints and Redux Toolkit",
+      "Figma-to-code and REST API integration",
     ],
     technologies: [
       "React",
@@ -113,9 +99,6 @@ export const featuredProjects = [
       "Tailwind CSS",
       "MongoDB",
       "Cloudinary",
-      "REST APIs",
-      "Axios",
-      "Git",
     ],
     image: muftyImg,
     imageAlt: "Mufty Foundation humanitarian platform website",
@@ -126,20 +109,17 @@ export const featuredProjects = [
   },
   {
     id: "pomirenje",
+    tier: "supporting",
     title: "Pomirenje",
     category: "Team Project · Frontend Development",
     status: "Live Product",
     description:
-      "A production-oriented public platform where I worked mainly on frontend development, building responsive interfaces, connecting the application to backend APIs and maintaining predictable state and data flow.",
+      "Production public platform with a frontend-focused role — building responsive React/TypeScript interfaces, Redux Toolkit state and REST API integration.",
     role: "Frontend Developer",
     highlights: [
       "React and TypeScript UI development",
-      "Responsive page implementation",
-      "Redux Toolkit state management",
-      "REST API integration",
-      "Dynamic data presentation",
-      "Navigation and routing",
-      "Debugging frontend/backend inconsistencies",
+      "Redux Toolkit and REST API integration",
+      "Responsive pages and predictable data flow",
     ],
     technologies: [
       "React",
@@ -149,11 +129,9 @@ export const featuredProjects = [
       "Tailwind CSS",
       "Bootstrap",
       "REST APIs",
-      "Axios",
-      "Git",
     ],
     image: null,
-    imageAlt: "Abstract cover representing the Pomirenje public platform",
+    imageAlt: "Designed project cover for the Pomirenje public platform",
     liveUrl: "https://www.pomirenje.gov.rs/",
     githubUrl: null,
     privateProject: false,
@@ -166,8 +144,8 @@ export const additionalProjects = [
     id: "online-shop",
     title: "Online Shop",
     summary:
-      "Full-stack e-commerce application with product browsing, cart flows and API-driven product data.",
-    technologies: ["Golang", "TypeScript", "MongoDB", "Tailwind CSS", "Redux"],
+      "E-commerce application with product browsing, cart flows and API-driven product data.",
+    technologies: ["React", "TypeScript", "MongoDB", "Tailwind CSS", "Redux"],
     image: shopImg,
     imageAlt: "Online shop e-commerce application screenshot",
     liveUrl: "https://onlineshopts.netlify.app/",
@@ -176,8 +154,8 @@ export const additionalProjects = [
     id: "ramazan-tracker",
     title: "Ramazan Tracker",
     summary:
-      "Prayer-time and Ramadan tracking web app covering 110+ cities with a React frontend and Golang backend.",
-    technologies: ["React", "Golang", "Tailwind CSS", "LocalStorage"],
+      "Prayer-time and Ramadan tracking app for 110+ cities with React and Golang.",
+    technologies: ["React", "Golang", "Tailwind CSS"],
     image: ramazanImg,
     imageAlt: "Ramazan Tracker application screenshot",
     liveUrl: "https://ramazan-tracker.vercel.app/",
@@ -186,20 +164,10 @@ export const additionalProjects = [
     id: "worldwise",
     title: "WorldWise",
     summary:
-      "Travel mapping application for logging visited places with React routing, Tailwind CSS and Redux state.",
+      "Travel mapping app for logging visited places with React Router and Redux.",
     technologies: ["React", "Tailwind CSS", "React Router", "Redux"],
     image: worldwiseImg,
     imageAlt: "WorldWise travel map application screenshot",
     liveUrl: "https://worldwiseic.netlify.app/",
-  },
-  {
-    id: "smart-docs",
-    title: "Smart Docs",
-    summary:
-      "Document management system with TypeScript frontend, Golang services and MongoDB persistence.",
-    technologies: ["Golang", "TypeScript", "MongoDB", "Tailwind CSS", "Redux"],
-    image: smartDocsImg,
-    imageAlt: "Smart Docs document management system screenshot",
-    liveUrl: "https://mastery-task-3-e58-1-e06.vercel.app/",
   },
 ];

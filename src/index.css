@@ -5,41 +5,41 @@
 :root {
   --accent: #c44036;
   --accent-strong: #a8332b;
-  --title-color: #1c232b;
-  --text-color: #3d4754;
-  --text-muted: #66707c;
+  --title-color: #141a21;
+  --text-color: #2f3844;
+  --text-muted: #5c6672;
   --body-color: #f4f2ee;
   --surface: #ffffff;
   --surface-muted: #f7f5f1;
   --border: #e4e0d8;
-  --border-strong: #d2cdc3;
+  --border-strong: #cfc9be;
 
   --body-font: "Manrope", sans-serif;
   --display-font: "Source Serif 4", Georgia, serif;
 
-  --h1-font-size: 2.5rem;
-  --h2-font-size: 1.85rem;
-  --h3-font-size: 1.25rem;
+  --h1-font-size: 2.75rem;
+  --h2-font-size: 2rem;
+  --h3-font-size: 1.35rem;
   --normal-font-size: 1.0625rem;
-  --small-font-size: 0.925rem;
+  --small-font-size: 0.9375rem;
 
   --font-medium: 500;
   --font-semibold: 600;
   --font-bold: 700;
 
-  --shadow-sm: 0 8px 24px rgba(28, 35, 43, 0.04);
-  --shadow-md: 0 16px 40px rgba(28, 35, 43, 0.07);
+  --shadow-sm: 0 8px 24px rgba(28, 35, 43, 0.05);
+  --shadow-md: 0 16px 40px rgba(28, 35, 43, 0.08);
   --shadow-lg: 0 24px 50px rgba(28, 35, 43, 0.12);
 
   --border-radius: 1rem;
-  --container-width: 1180px;
+  --container-width: 1200px;
 }
 
-@media screen and (max-width: 1024px) {
+@media screen and (min-width: 1024px) {
   :root {
-    --h1-font-size: 2.1rem;
-    --h2-font-size: 1.65rem;
-    --h3-font-size: 1.15rem;
+    --normal-font-size: 1.125rem;
+    --h1-font-size: 3rem;
+    --h2-font-size: 2.15rem;
   }
 }
 
@@ -83,7 +83,7 @@ body {
     radial-gradient(circle at top left, rgba(196, 64, 54, 0.05), transparent 28%),
     linear-gradient(180deg, #f7f5f1 0%, var(--body-color) 36%, #efebe4 100%);
   color: var(--text-color);
-  line-height: 1.7;
+  line-height: 1.75;
   min-width: 320px;
   overflow-x: hidden;
 }
@@ -94,7 +94,7 @@ h3,
 h4 {
   color: var(--title-color);
   font-weight: var(--font-semibold);
-  line-height: 1.2;
+  line-height: 1.25;
 }
 
 ul {
@@ -127,15 +127,15 @@ img {
 }
 
 .section {
-  padding-top: 5rem;
-  padding-bottom: 2.5rem;
-  scroll-margin-top: 5rem;
+  padding-top: 4rem;
+  padding-bottom: 2rem;
+  scroll-margin-top: 4.75rem;
 }
 
 @media screen and (min-width: 768px) {
   .section {
-    padding-top: 6rem;
-    padding-bottom: 3rem;
+    padding-top: 4.75rem;
+    padding-bottom: 2.25rem;
   }
 }
 
@@ -145,6 +145,6 @@ img {
   }
 
   .section {
-    padding-top: 4rem;
+    padding-top: 3.5rem;
   }
 }

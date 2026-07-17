@@ -1,26 +1,41 @@
-.projects__featured {
+.projects__primary {
   display: grid;
-  gap: 1.5rem;
+  gap: 1.35rem;
+}
+
+.projects__supporting {
+  display: grid;
+  gap: 1.15rem;
+  margin-top: 1.35rem;
 }
 
 .projects__additional {
-  margin-top: 4rem;
+  margin-top: 3rem;
+}
+
+.projects__additional .section-heading {
+  margin-bottom: 1.5rem;
 }
 
 .projects__additional-grid {
   display: grid;
-  gap: 1.15rem;
+  gap: 1.1rem;
+  align-items: stretch;
 }
 
 @media screen and (min-width: 768px) {
-  .projects__additional-grid {
+  .projects__supporting {
     grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 1.25rem;
+  }
+
+  .projects__additional-grid {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
   }
 }
 
 @media screen and (min-width: 1024px) {
-  .projects__featured {
-    grid-template-columns: repeat(2, minmax(0, 1fr));
-    gap: 1.75rem;
+  .projects__primary {
+    gap: 1.5rem;
   }
 }

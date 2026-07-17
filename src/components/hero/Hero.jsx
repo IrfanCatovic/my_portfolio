@@ -8,7 +8,6 @@ function Hero() {
     <section className="hero section" id="home" aria-labelledby="hero-name">
       <div className="container hero__grid">
         <div className="hero__content reveal">
-          <p className="hero__eyebrow">Full Stack Developer</p>
           <h1 id="hero-name" className="hero__name">
             {site.name}
           </h1>

@@ -14,7 +14,6 @@ function Education() {
           id="education-title"
           eyebrow="Background"
           title="Education"
-          description="Formal studies and certificates supporting my engineering work."
         />
 
         <div className="education__layout">

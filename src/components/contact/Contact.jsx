@@ -89,6 +89,11 @@ function Contact() {
         throw new Error("Form submission failed");
       }
 
+      const result = await response.json();
+      if (result.success !== true && result.success !== "true") {
+        throw new Error("Form submission failed");
+      }
+
       setForm(INITIAL_FORM);
       setErrors({});
       setStatus("success");
@@ -96,17 +101,10 @@ function Contact() {
         "Thanks — your message was sent successfully. I will get back to you soon."
       );
     } catch {
-      const mailto = `mailto:${site.email}?subject=${encodeURIComponent(
-        form.subject.trim()
-      )}&body=${encodeURIComponent(
-        `Name: ${form.name.trim()}\nEmail: ${form.email.trim()}\n\n${form.message.trim()}`
-      )}`;
-
       setStatus("error");
       setStatusMessage(
-        "The contact form could not send right now. You can email me directly instead."
+        "The contact form could not send right now. Please email me directly at catovicc84@gmail.com."
       );
-      window.location.href = mailto;
     }
   };
 

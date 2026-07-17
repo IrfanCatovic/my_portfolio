@@ -1,73 +1,56 @@
-.about__grid {
-  display: grid;
-  gap: 2rem;
-  align-items: center;
-}
-
-.about__media {
-  justify-self: center;
-  width: min(100%, 22rem);
-}
-
-.about__photo {
-  display: block;
-  width: 100%;
-  aspect-ratio: 4 / 5;
-  object-fit: cover;
-  object-position: center top;
-  border-radius: 1.15rem;
-  border: 1px solid var(--border);
-  box-shadow: var(--shadow-md);
+.about__content {
+  max-width: 52rem;
 }
 
 .about__content .section-heading {
-  margin-bottom: 1.35rem;
+  margin-bottom: 1.25rem;
 }
 
 .about__text {
-  margin-bottom: 1rem;
+  margin-bottom: 1.75rem;
   color: var(--text-color);
-  font-size: 1.0625rem;
+  font-size: inherit;
   line-height: 1.75;
+  max-width: 44rem;
 }
 
 .about__strengths {
   display: grid;
-  gap: 0.7rem;
-  margin-top: 1.5rem;
+  gap: 1rem;
 }
 
-.about__strengths li {
-  position: relative;
-  padding: 0.9rem 1rem 0.9rem 2.5rem;
+.about__strength-card {
+  padding: 1.25rem 1.35rem;
   border: 1px solid var(--border);
-  border-radius: 0.8rem;
+  border-radius: 0.9rem;
   background: var(--surface);
+  box-shadow: var(--shadow-sm);
+}
+
+.about__strength-card h3 {
+  margin-bottom: 0.45rem;
+  font-family: var(--display-font);
+  font-size: 1.15rem;
+  font-weight: 650;
+  letter-spacing: -0.02em;
   color: var(--title-color);
+}
+
+.about__strength-card p {
+  color: var(--text-color);
   font-size: 1rem;
-  font-weight: var(--font-medium);
-  list-style: none;
+  line-height: 1.65;
 }
 
-.about__strengths li::before {
-  content: "";
-  position: absolute;
-  left: 1rem;
-  top: 50%;
-  width: 0.55rem;
-  height: 0.55rem;
-  border-radius: 50%;
-  background: var(--accent);
-  transform: translateY(-50%);
-}
-
-@media screen and (min-width: 900px) {
-  .about__grid {
-    grid-template-columns: minmax(14rem, 0.8fr) minmax(0, 1.2fr);
-    gap: 3rem;
+@media screen and (min-width: 768px) {
+  .about__strengths {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 1.1rem;
   }
+}
 
-  .about__media {
-    justify-self: start;
+@media screen and (max-width: 767px) {
+  .about__strengths {
+    grid-template-columns: 1fr;
   }
 }

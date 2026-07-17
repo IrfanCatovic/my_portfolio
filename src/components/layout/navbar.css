@@ -20,7 +20,7 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
-  min-height: 4.25rem;
+  min-height: 4.5rem;
   gap: 1rem;
 }
 
@@ -43,18 +43,18 @@
   display: inline-flex;
   align-items: center;
   justify-content: center;
-  width: 2.4rem;
-  height: 2.4rem;
+  width: 2.5rem;
+  height: 2.5rem;
   border-radius: 0.7rem;
   background: var(--title-color);
   color: #fff;
   font-family: var(--display-font);
-  font-size: 0.95rem;
+  font-size: 1rem;
   letter-spacing: 0.02em;
 }
 
 .navbar__name {
-  font-size: 1rem;
+  font-size: 1.05rem;
 }
 
 .navbar__toggle {
@@ -62,8 +62,8 @@
   flex-direction: column;
   justify-content: center;
   gap: 0.3rem;
-  width: 2.75rem;
-  height: 2.75rem;
+  width: 2.875rem;
+  height: 2.875rem;
   padding: 0.55rem;
   border: 1px solid var(--border);
   border-radius: 0.65rem;
@@ -92,10 +92,10 @@
 
 .navbar__link {
   display: inline-flex;
-  padding: 0.55rem 0.8rem;
+  padding: 0.65rem 0.9rem;
   border-radius: 0.55rem;
   color: var(--text-color);
-  font-size: 0.95rem;
+  font-size: 1rem;
   font-weight: var(--font-medium);
   transition: color 0.2s ease, background-color 0.2s ease;
 }
@@ -123,7 +123,7 @@
   .navbar__nav {
     position: fixed;
     inset: 0 0 auto 0;
-    top: 4.25rem;
+    top: 4.5rem;
     padding: 1rem 1.25rem 1.5rem;
     background: var(--surface);
     border-bottom: 1px solid var(--border);
@@ -147,15 +147,15 @@
   }
 
   .navbar__link {
-    padding: 0.9rem 1rem;
-    font-size: 1.05rem;
+    padding: 0.95rem 1rem;
+    font-size: 1.0625rem;
   }
 
   .navbar__backdrop {
     display: block;
     position: fixed;
     inset: 0;
-    top: 4.25rem;
+    top: 4.5rem;
     border: 0;
     background: rgba(20, 24, 28, 0.35);
     z-index: 0;

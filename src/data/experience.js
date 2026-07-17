@@ -5,7 +5,7 @@ export const experience = [
     role: "Full Stack Developer",
     period: "February 2023 – Present",
     summary:
-      "Building full-stack products and client systems from initial requirements through database design, backend business logic, frontend implementation, debugging and deployment. Primary projects include Planiner and AM Keramika.",
+      "Building full-stack products and client systems from requirements through database design, backend logic, frontend implementation and deployment. Primary projects include Planiner and AM Keramika.",
   },
   {
     id: "ilm",
@@ -13,7 +13,7 @@ export const experience = [
     role: "Full Stack Developer — React / Golang",
     period: "January 2025 – February 2026",
     summary:
-      "Worked as part of a development team on production-focused projects, contributing to React and TypeScript frontend development, Golang backend functionality, API integration, state management and collaborative debugging.",
+      "Contributed to production-focused team projects with React and TypeScript frontend development, Golang backend work, API integration and collaborative debugging.",
   },
   {
     id: "pester",
@@ -21,7 +21,7 @@ export const experience = [
     role: "Creative Designer & Digital Content Editor — Part-Time",
     period: "February 2025 – June 2025",
     summary:
-      "Created graphics, motion visuals and edited video content for digital platforms. Improved reusable templates, asset organization and content-production consistency while developing a stronger understanding of visual communication and audience attention.",
+      "Created graphics, motion visuals and video content for digital platforms while improving reusable templates and content-production consistency.",
   },
   {
     id: "klaster",
@@ -29,6 +29,6 @@ export const experience = [
     role: "Frontend Developer",
     period: "January 2022 – December 2022",
     summary:
-      "Built responsive React and TypeScript interfaces, connected frontend functionality with REST APIs, managed application state with Redux Toolkit and contributed to production-oriented team projects including Pomirenje.",
+      "Built responsive React and TypeScript interfaces, integrated REST APIs with Redux Toolkit and contributed to production team projects including Pomirenje.",
   },
 ];

@@ -9,14 +9,24 @@ export const site = {
   designPortfolio: "https://irfancatovic.my.canva.site/have-fun",
   heroSupport:
     "I build practical web applications and internal business systems, combining reliable backend business logic with responsive frontend experiences and strong product thinking.",
-  about: [
-    "I am a full-stack developer focused on building practical products and internal systems that solve real operational problems. I work across React, TypeScript, Golang, PostgreSQL and REST APIs, and I enjoy understanding the complete product — user needs, business rules, data flow, frontend usability, backend architecture and deployment.",
-    "My background in graphic design, video editing and visual communication helps me build interfaces that are not only functional, but also clear and intuitive for the people who use them.",
-  ],
+  aboutIntro:
+    "I am a full-stack developer focused on building practical products and internal systems that solve real operational problems. I work across React, TypeScript, Golang, PostgreSQL and REST APIs — from user needs and business rules through data flow, frontend usability, backend architecture and deployment.",
   strengths: [
-    "Product and business thinking",
-    "Backend logic and data accuracy",
-    "Frontend usability and visual awareness",
+    {
+      title: "Product and business thinking",
+      description:
+        "Understanding operational workflows, user needs and the business rules that software must enforce accurately.",
+    },
+    {
+      title: "Backend logic and data accuracy",
+      description:
+        "Reliable APIs, authentication, databases and business logic for systems where data integrity matters.",
+    },
+    {
+      title: "Frontend usability and visual awareness",
+      description:
+        "Clear, responsive interfaces informed by experience in design, media and visual communication.",
+    },
   ],
   contactHeading: "Let’s build something useful.",
   contactText:

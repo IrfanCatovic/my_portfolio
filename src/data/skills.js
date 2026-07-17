@@ -66,24 +66,3 @@ export const skillGroups = [
     ],
   },
 ];
-
-export const capabilities = [
-  {
-    id: "fullstack",
-    title: "Full-Stack Web Applications",
-    description:
-      "Frontend interfaces, backend APIs, authentication, databases and deployment.",
-  },
-  {
-    id: "business",
-    title: "Internal Business Systems",
-    description:
-      "Operational workflows, roles, stock, invoices, payments, reports and data integrity.",
-  },
-  {
-    id: "product-ui",
-    title: "Product UI & Visual Communication",
-    description:
-      "Responsive interfaces supported by experience in design, media and visual storytelling.",
-  },
-];
