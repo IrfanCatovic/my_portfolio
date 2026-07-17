@@ -1,9 +1,19 @@
-.main {
-  margin-left: 110px;
+.skip-link {
+  position: absolute;
+  left: 1rem;
+  top: -100px;
+  z-index: 2000;
+  padding: 0.75rem 1rem;
+  border-radius: 0.5rem;
+  background: var(--title-color);
+  color: #fff;
+  font-weight: var(--font-semibold);
 }
 
-@media screen and (max-width: 1024px) {
-  .main {
-    margin-left: 0;
-  }
+.skip-link:focus {
+  top: 1rem;
+}
+
+.main {
+  overflow-x: hidden;
 }

@@ -1,0 +1,148 @@
+.hero {
+  position: relative;
+  overflow: hidden;
+  padding-top: 4.5rem;
+  padding-bottom: 4rem;
+}
+
+.hero::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background:
+    radial-gradient(circle at 12% 18%, rgba(196, 64, 54, 0.1), transparent 34%),
+    radial-gradient(circle at 88% 10%, rgba(45, 74, 94, 0.08), transparent 30%),
+    linear-gradient(180deg, rgba(255, 255, 255, 0.55), transparent 55%);
+  pointer-events: none;
+}
+
+.hero__grid {
+  position: relative;
+  display: grid;
+  gap: 2.5rem;
+  align-items: center;
+}
+
+.hero__eyebrow {
+  margin-bottom: 0.85rem;
+  color: var(--accent);
+  font-size: 0.875rem;
+  font-weight: var(--font-semibold);
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+
+.hero__name {
+  margin-bottom: 0.85rem;
+  font-family: var(--display-font);
+  font-size: clamp(2.4rem, 5vw, 3.6rem);
+  font-weight: 700;
+  letter-spacing: -0.04em;
+  line-height: 1.05;
+  color: var(--title-color);
+}
+
+.hero__title {
+  margin-bottom: 1.15rem;
+  max-width: 34rem;
+  color: var(--title-color);
+  font-size: clamp(1.15rem, 2vw, 1.4rem);
+  font-weight: var(--font-semibold);
+  line-height: 1.35;
+}
+
+.hero__support {
+  max-width: 38rem;
+  margin-bottom: 1rem;
+  color: var(--text-color);
+  font-size: 1.0625rem;
+  line-height: 1.75;
+}
+
+.hero__location {
+  margin-bottom: 1.75rem;
+  color: var(--text-muted);
+  font-size: 0.975rem;
+}
+
+.hero__actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.85rem;
+}
+
+.hero__media {
+  justify-self: center;
+  width: min(100%, 24rem);
+}
+
+.hero__photo-frame {
+  position: relative;
+  border-radius: 1.4rem;
+  overflow: hidden;
+  border: 1px solid var(--border);
+  background: linear-gradient(160deg, #efeae4, #f7f4ef 45%, #e8eef2);
+  box-shadow: var(--shadow-lg);
+}
+
+.hero__photo-frame::after {
+  content: "";
+  position: absolute;
+  inset: auto 0 0 0;
+  height: 28%;
+  background: linear-gradient(transparent, rgba(20, 24, 28, 0.18));
+  pointer-events: none;
+}
+
+.hero__photo {
+  display: block;
+  width: 100%;
+  aspect-ratio: 4 / 5;
+  object-fit: cover;
+  object-position: center top;
+}
+
+@media screen and (min-width: 900px) {
+  .hero {
+    padding-top: 5.5rem;
+    padding-bottom: 5rem;
+  }
+
+  .hero__grid {
+    grid-template-columns: minmax(0, 1.15fr) minmax(16rem, 0.75fr);
+    gap: 3.5rem;
+  }
+
+  .hero__media {
+    justify-self: end;
+    width: min(100%, 22rem);
+  }
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .reveal {
+    animation: fade-up 0.7s ease both;
+  }
+
+  .reveal--delay {
+    animation-delay: 0.12s;
+  }
+}
+
+@keyframes fade-up {
+  from {
+    opacity: 0;
+    transform: translateY(16px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .reveal,
+  .reveal--delay {
+    animation: none;
+  }
+}

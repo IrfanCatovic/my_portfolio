@@ -1,51 +1,52 @@
 /*====================== GOOGLE FONTS =================*/
-@import url("https://fonts.googleapis.com/css2?family=Rubik:wght@400;500;600;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&family=Source+Serif+4:opsz,wght@8..60,600;8..60,700&display=swap");
 
 /*==================== Variables CSS =================== */
 :root {
-  /*============ Colors =========*/
-  /* Color mode HSL(hue, saturation, lightness)*/
-  --first-color: hsl(353, 100%, 65%);
-  --title-color: hsl(244, 24%, 26%);
-  --text-color: hsl(244, 16%, 43%);
-  --body-color: hsl(258, 60%, 98%);
-  --container-color: #fff;
+  --accent: #c44036;
+  --accent-strong: #a8332b;
+  --title-color: #1c232b;
+  --text-color: #3d4754;
+  --text-muted: #66707c;
+  --body-color: #f4f2ee;
+  --surface: #ffffff;
+  --surface-muted: #f7f5f1;
+  --border: #e4e0d8;
+  --border-strong: #d2cdc3;
 
-  /*============ Font and Typography ========= */
-  /* .5rem = 8px */
-  --body-font: "Rubik", sans-serif;
-  --h1-font-size: 2.25rem;
-  --h2-font-size: 1.5rem;
+  --body-font: "Manrope", sans-serif;
+  --display-font: "Source Serif 4", Georgia, serif;
+
+  --h1-font-size: 2.5rem;
+  --h2-font-size: 1.85rem;
   --h3-font-size: 1.25rem;
-  --normal-font-size: 1rem;
-  --small-font-size: 0.875rem;
-  --smaller-font-size: 0.813rem;
+  --normal-font-size: 1.0625rem;
+  --small-font-size: 0.925rem;
 
-  /*============ Font Weight ========= */
   --font-medium: 500;
   --font-semibold: 600;
   --font-bold: 700;
 
-  /*============ Box shadow ========= */
-  --shadow: 0px 5px 20px 0px rgb(69 67 96 / 10%);
+  --shadow-sm: 0 8px 24px rgba(28, 35, 43, 0.04);
+  --shadow-md: 0 16px 40px rgba(28, 35, 43, 0.07);
+  --shadow-lg: 0 24px 50px rgba(28, 35, 43, 0.12);
 
-  /*============ Border radius ========= */
-  --border-radius: 20px;
+  --border-radius: 1rem;
+  --container-width: 1180px;
 }
 
-/* Responsive typohraphy */
 @media screen and (max-width: 1024px) {
   :root {
-    --h1-font-size: 1.75rem;
-    --h2-font-size: 1.5rem;
-    --h3-font-size: 1rem;
-    --normal-font-size: 0.938rem;
-    --small-font-size: 0.813rem;
-    --smaller-font-size: 0.75rem;
+    --h1-font-size: 2.1rem;
+    --h2-font-size: 1.65rem;
+    --h3-font-size: 1.15rem;
   }
 }
+
 /*==================== Base ================== */
-* {
+*,
+*::before,
+*::after {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
@@ -53,6 +54,20 @@
 
 html {
   scroll-behavior: smooth;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+  }
 }
 
 body,
@@ -64,14 +79,19 @@ textarea {
 }
 
 body {
-  background-color: var(--body-color);
-  line-height: 1.7;
+  background:
+    radial-gradient(circle at top left, rgba(196, 64, 54, 0.05), transparent 28%),
+    linear-gradient(180deg, #f7f5f1 0%, var(--body-color) 36%, #efebe4 100%);
   color: var(--text-color);
+  line-height: 1.7;
+  min-width: 320px;
+  overflow-x: hidden;
 }
 
 h1,
 h2,
-h3 {
+h3,
+h4 {
   color: var(--title-color);
   font-weight: var(--font-semibold);
   line-height: 1.2;
@@ -82,6 +102,7 @@ ul {
 }
 
 a {
+  color: inherit;
   text-decoration: none;
 }
 
@@ -89,6 +110,8 @@ button {
   cursor: pointer;
   border: none;
   outline: none;
+  background: none;
+  font: inherit;
 }
 
 img {
@@ -97,62 +120,31 @@ img {
   vertical-align: middle;
 }
 
-/*==================== Reusable CSS classes  ================== */
+/*==================== Layout ================== */
 .container {
-  max-width: 1080px;
-  padding-left: 15px;
-  padding-right: 15px;
-  margin: 0 auto;
-}
-.grid {
-  display: grid;
+  width: min(100% - 2rem, var(--container-width));
+  margin-inline: auto;
 }
 
 .section {
-  padding-top: 7rem;
-  padding-bottom: 2rem;
+  padding-top: 5rem;
+  padding-bottom: 2.5rem;
+  scroll-margin-top: 5rem;
 }
 
-.section_title {
-  font-size: var(--h1-font-size);
-  margin-left: 0.875rem;
-  font-weight: var(--font-bold);
-  position: relative;
-  margin-bottom: 3.75rem;
-}
-
-.section_title::before {
-  content: "";
-  background: url(./assests/dots-bg.svg);
-  height: 2.25rem;
-  width: 2.25rem;
-  position: absolute;
-  left: -0.875rem;
-  top: -0.875rem;
-}
-
-.btn {
-  padding: 0.75rem 2rem;
-  line-height: 1;
-  border-radius: 1.875rem;
-  box-shadow: 0 0 1px rgb(0 0 0 /0%);
-  border: 1px solid transparent;
-  color: #fff;
-  display: inline-block;
-  background-color: var(--first-color);
-  font-weight: var(--font-bold);
-}
-
-@keyframes button-push {
-  50% {
-    transform: scale(0.8);
-  }
-
-  100% {
-    transform: scale(1);
+@media screen and (min-width: 768px) {
+  .section {
+    padding-top: 6rem;
+    padding-bottom: 3rem;
   }
 }
 
-.btn:hover {
-  animation: button-push 0.3s linear;
+@media screen and (max-width: 360px) {
+  .container {
+    width: min(100% - 1.25rem, var(--container-width));
+  }
+
+  .section {
+    padding-top: 4rem;
+  }
 }

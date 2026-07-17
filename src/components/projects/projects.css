@@ -1,0 +1,26 @@
+.projects__featured {
+  display: grid;
+  gap: 1.5rem;
+}
+
+.projects__additional {
+  margin-top: 4rem;
+}
+
+.projects__additional-grid {
+  display: grid;
+  gap: 1.15rem;
+}
+
+@media screen and (min-width: 768px) {
+  .projects__additional-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .projects__featured {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 1.75rem;
+  }
+}

@@ -1,28 +1,33 @@
-import "./App.css";
-import Sidebar from "./components/sidebar/Sidebar";
-import Home from "./components/home/Home";
+import Navbar from "./components/layout/Navbar";
+import Footer from "./components/layout/Footer";
+import Hero from "./components/hero/Hero";
+import Projects from "./components/projects/Projects";
+import Experience from "./components/experience/Experience";
+import Skills from "./components/skills/Skills";
+import Capabilities from "./components/capabilities/Capabilities";
 import About from "./components/about/About";
-import Services from "./components/services/Services";
-import Resume from "./components/resume/Resume";
-import Portfolio from "./components/portfolio/Portfolio";
-import Pricing from "./components/Pricing/Pricing";
-
+import Education from "./components/education/Education";
 import Contact from "./components/contact/Contact";
+import "./App.css";
 
 function App() {
   return (
     <>
-      <Sidebar />
-      <main className="main">
-        <Home />
+      <a href="#main-content" className="skip-link">
+        Skip to content
+      </a>
+      <Navbar />
+      <main id="main-content" className="main">
+        <Hero />
+        <Projects />
+        <Experience />
+        <Skills />
+        <Capabilities />
         <About />
-        <Services />
-        <Resume />
-        <Portfolio />
-        <Pricing />
-
+        <Education />
         <Contact />
       </main>
+      <Footer />
     </>
   );
 }
