@@ -29,8 +29,8 @@ function Hero() {
               src={selfie}
               alt={`${site.name}, full stack developer`}
               className="hero__photo"
-              width="480"
-              height="600"
+              width="320"
+              height="320"
             />
           </div>
         </div>

@@ -63,26 +63,28 @@
 
 .hero__media {
   justify-self: center;
-  width: min(100%, 17.5rem);
+  width: min(100%, 15.5rem);
 }
 
 .hero__photo-frame {
   position: relative;
-  border-radius: 1.15rem;
+  width: 100%;
+  aspect-ratio: 1 / 1;
+  padding: 0.35rem;
+  border-radius: 50%;
   overflow: hidden;
-  border: 1px solid var(--border);
-  background: #e8e4de;
+  border: 3px solid rgba(196, 64, 54, 0.18);
+  background: var(--surface);
   box-shadow: var(--shadow-md);
 }
 
 .hero__photo {
   display: block;
   width: 100%;
-  aspect-ratio: 4 / 5;
+  height: 100%;
+  border-radius: 50%;
   object-fit: cover;
-  object-position: center 12%;
-  transform: scale(1.12);
-  transform-origin: center 18%;
+  object-position: center 18%;
 }
 
 @media screen and (min-width: 900px) {
@@ -98,7 +100,7 @@
 
   .hero__media {
     justify-self: end;
-    width: min(100%, 16.5rem);
+    width: min(100%, 14.5rem);
   }
 }
 

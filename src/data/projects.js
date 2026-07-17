@@ -1,5 +1,6 @@
 import planinerImg from "../assests/work12.png";
 import muftyImg from "../assests/work-8.JPG";
+import pomirenjeImg from "../assests/pomirenje.PNG";
 import shopImg from "../assests/work11.png";
 import ramazanImg from "../assests/Artboard 1.jpg";
 import worldwiseImg from "../assests/Work7.JPG";
@@ -43,11 +44,11 @@ export const primaryProjects = [
     id: "am-keramika",
     tier: "primary",
     title: "AM Keramika — Internal Business Operations Platform",
-    category: "Internal Business System",
+    category: "Internal Business System · Founder Project",
     status: "Private Client Project · In Development",
     description:
-      "A private full-stack operations platform for a ceramics and heating products company — centralizing inventory, invoicing, payments, customer debt tracking and daily financial reporting with role-based access.",
-    role: "Full Stack Developer",
+      "A private full-stack operations platform I founded and built for a ceramics and heating products company — centralizing inventory, invoicing, payments, customer debt tracking and daily financial reporting with role-based access.",
+    role: "Founder & Full Stack Developer",
     highlights: [
       "Product, stock and inventory management",
       "Invoice creation, PDF generation and payment allocation",
@@ -67,11 +68,11 @@ export const primaryProjects = [
       "PDF generation",
     ],
     image: null,
-    imageAlt: "Designed project cover for AM Keramika internal business platform",
+    imageAlt: "AM Keramika project screenshot coming soon",
     liveUrl: null,
     githubUrl: null,
     privateProject: true,
-    coverStyle: "operations",
+    coverStyle: "coming-soon",
   },
 ];
 
@@ -130,12 +131,12 @@ export const supportingProjects = [
       "Bootstrap",
       "REST APIs",
     ],
-    image: null,
-    imageAlt: "Designed project cover for the Pomirenje public platform",
+    image: pomirenjeImg,
+    imageAlt: "Pomirenje public platform website",
     liveUrl: "https://www.pomirenje.gov.rs/",
     githubUrl: null,
     privateProject: false,
-    coverStyle: "civic",
+    coverStyle: null,
   },
 ];
 
