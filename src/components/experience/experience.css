@@ -9,6 +9,16 @@
   border-radius: 1rem;
   background: var(--surface);
   box-shadow: var(--shadow-sm);
+  border-left: 3px solid transparent;
+  transition: transform 0.3s ease, box-shadow 0.3s ease,
+    border-color 0.3s ease;
+}
+
+.experience-item.is-visible:hover {
+  transform: translateY(-2px);
+  border-color: var(--border);
+  border-left-color: var(--accent);
+  box-shadow: var(--shadow-md);
 }
 
 .experience-item__role {
@@ -44,5 +54,15 @@
 @media screen and (min-width: 768px) {
   .experience-item {
     padding: 1.45rem 1.6rem;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .experience-item {
+    transition: none;
+  }
+
+  .experience-item.is-visible:hover {
+    transform: none;
   }
 }

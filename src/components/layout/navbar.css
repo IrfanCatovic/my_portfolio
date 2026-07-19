@@ -51,6 +51,12 @@
   font-family: var(--display-font);
   font-size: 1rem;
   letter-spacing: 0.02em;
+  transition: transform 0.25s ease, background-color 0.25s ease;
+}
+
+.navbar__brand:hover .navbar__logo {
+  background: var(--accent);
+  transform: translateY(-1px);
 }
 
 .navbar__name {
@@ -169,7 +175,12 @@
 @media (prefers-reduced-motion: reduce) {
   .navbar,
   .navbar__nav,
-  .navbar__link {
+  .navbar__link,
+  .navbar__logo {
     transition: none;
+  }
+
+  .navbar__brand:hover .navbar__logo {
+    transform: none;
   }
 }

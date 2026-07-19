@@ -1,6 +1,7 @@
 import { useId, useState } from "react";
 import { site } from "../../data/site";
 import Button from "../ui/Button";
+import Reveal from "../ui/Reveal";
 import SectionHeading from "../ui/SectionHeading";
 import "./contact.css";
 
@@ -114,7 +115,7 @@ function Contact() {
       id="contact"
       aria-labelledby="contact-title"
     >
-      <div className="container contact__layout">
+      <Reveal className="container contact__layout" variant="scale">
         <div className="contact__intro">
           <SectionHeading
             id="contact-title"
@@ -250,7 +251,7 @@ function Contact() {
             </p>
           ) : null}
         </form>
-      </div>
+      </Reveal>
     </section>
   );
 }

@@ -1,3 +1,4 @@
+import Reveal from "../ui/Reveal";
 import Badge from "../ui/Badge";
 import Button from "../ui/Button";
 import Tag from "../ui/Tag";
@@ -7,7 +8,7 @@ import "./project-card.css";
 const MAX_HIGHLIGHTS = 4;
 const MAX_TAGS = 8;
 
-function ProjectCard({ project, variant = "supporting" }) {
+function ProjectCard({ project, variant = "supporting", delay = 0 }) {
   const isCompact = variant === "compact";
   const isPrimary = variant === "primary";
   const statusTone = project.privateProject
@@ -20,8 +21,11 @@ function ProjectCard({ project, variant = "supporting" }) {
   const technologies = project.technologies?.slice(0, MAX_TAGS) ?? [];
 
   return (
-    <article
+    <Reveal
+      as="article"
       className={`project-card project-card--${variant}`}
+      delay={delay}
+      variant={isPrimary ? "scale" : "up"}
     >
       <div className="project-card__media">
         <ProjectCover project={project} />
@@ -90,7 +94,7 @@ function ProjectCard({ project, variant = "supporting" }) {
           ) : null}
         </div>
       </div>
-    </article>
+    </Reveal>
   );
 }
 

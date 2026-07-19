@@ -18,6 +18,27 @@
   border-radius: 0.9rem;
   background: var(--surface);
   box-shadow: var(--shadow-sm);
+  transition: transform 0.3s ease, box-shadow 0.3s ease,
+    border-color 0.3s ease;
+}
+
+.education__list.is-visible:hover,
+.education__certificates.is-visible:hover {
+  transform: translateY(-2px);
+  border-color: rgba(196, 64, 54, 0.18);
+  box-shadow: var(--shadow-md);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .education__list,
+  .education__certificates {
+    transition: none;
+  }
+
+  .education__list.is-visible:hover,
+  .education__certificates.is-visible:hover {
+    transform: none;
+  }
 }
 
 .education__item + .education__item {

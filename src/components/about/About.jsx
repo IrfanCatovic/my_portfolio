@@ -1,4 +1,5 @@
 import { site } from "../../data/site";
+import Reveal from "../ui/Reveal";
 import SectionHeading from "../ui/SectionHeading";
 import "./about.css";
 
@@ -11,14 +12,22 @@ function About() {
           eyebrow="About"
           title="Building practical software end to end"
         />
-        <p className="about__text">{site.aboutIntro}</p>
+        <Reveal as="p" className="about__text">
+          {site.aboutIntro}
+        </Reveal>
 
         <div className="about__strengths" aria-label="Core strengths">
-          {site.strengths.map((strength) => (
-            <article key={strength.title} className="about__strength-card">
+          {site.strengths.map((strength, index) => (
+            <Reveal
+              key={strength.title}
+              as="article"
+              className="about__strength-card"
+              delay={index * 90}
+              variant="scale"
+            >
               <h3>{strength.title}</h3>
               <p>{strength.description}</p>
-            </article>
+            </Reveal>
           ))}
         </div>
       </div>

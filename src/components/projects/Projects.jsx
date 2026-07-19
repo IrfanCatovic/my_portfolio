@@ -23,17 +23,23 @@ function Projects() {
         />
 
         <div className="projects__primary">
-          {primaryProjects.map((project) => (
-            <ProjectCard key={project.id} project={project} variant="primary" />
+          {primaryProjects.map((project, index) => (
+            <ProjectCard
+              key={project.id}
+              project={project}
+              variant="primary"
+              delay={index * 80}
+            />
           ))}
         </div>
 
         <div className="projects__supporting">
-          {supportingProjects.map((project) => (
+          {supportingProjects.map((project, index) => (
             <ProjectCard
               key={project.id}
               project={project}
               variant="supporting"
+              delay={index * 90}
             />
           ))}
         </div>
@@ -44,8 +50,13 @@ function Projects() {
             description="Smaller applications demonstrating frontend craft and API integration."
           />
           <div className="projects__additional-grid">
-            {additionalProjects.map((project) => (
-              <ProjectCard key={project.id} project={project} variant="compact" />
+            {additionalProjects.map((project, index) => (
+              <ProjectCard
+                key={project.id}
+                project={project}
+                variant="compact"
+                delay={index * 70}
+              />
             ))}
           </div>
         </div>

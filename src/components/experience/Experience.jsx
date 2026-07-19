@@ -18,8 +18,8 @@ function Experience() {
           description="Reverse-chronological overview of product, engineering and supporting creative work."
         />
         <ol className="experience__list">
-          {experience.map((item) => (
-            <ExperienceItem key={item.id} item={item} />
+          {experience.map((item, index) => (
+            <ExperienceItem key={item.id} item={item} delay={index * 70} />
           ))}
         </ol>
       </div>

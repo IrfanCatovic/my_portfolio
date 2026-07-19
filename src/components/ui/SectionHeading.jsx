@@ -1,3 +1,4 @@
+import Reveal from "./Reveal";
 import "./ui.css";
 
 function SectionHeading({
@@ -8,7 +9,7 @@ function SectionHeading({
   align = "left",
 }) {
   return (
-    <header className={`section-heading section-heading--${align}`}>
+    <Reveal as="header" className={`section-heading section-heading--${align}`}>
       {eyebrow ? <p className="section-heading__eyebrow">{eyebrow}</p> : null}
       <h2 id={id} className="section-heading__title">
         {title}
@@ -16,7 +17,7 @@ function SectionHeading({
       {description ? (
         <p className="section-heading__description">{description}</p>
       ) : null}
-    </header>
+    </Reveal>
   );
 }
 

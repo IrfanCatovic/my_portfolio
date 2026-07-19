@@ -1,4 +1,5 @@
 import { certificates, education } from "../../data/education";
+import Reveal from "../ui/Reveal";
 import SectionHeading from "../ui/SectionHeading";
 import "./education.css";
 
@@ -17,23 +18,28 @@ function Education() {
         />
 
         <div className="education__layout">
-          <ul className="education__list">
+          <Reveal as="ul" className="education__list" variant="left">
             {education.map((item) => (
               <li key={item.id} className="education__item">
                 <h3 className="education__title">{item.title}</h3>
                 <p className="education__detail">{item.detail}</p>
               </li>
             ))}
-          </ul>
+          </Reveal>
 
-          <div className="education__certificates">
+          <Reveal
+            as="div"
+            className="education__certificates"
+            delay={90}
+            variant="right"
+          >
             <h3 className="education__certificates-title">Certificates</h3>
             <ul>
               {certificates.map((certificate) => (
                 <li key={certificate}>{certificate}</li>
               ))}
             </ul>
-          </div>
+          </Reveal>
         </div>
       </div>
     </section>

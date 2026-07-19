@@ -32,11 +32,13 @@
   color: var(--text-color);
   font-size: 0.95rem;
   font-weight: var(--font-medium);
+  transition: color 0.2s ease, transform 0.2s ease;
 }
 
 .site-footer__links a:hover,
 .site-footer__links a:focus-visible {
   color: var(--accent);
+  transform: translateY(-1px);
 }
 
 .site-footer__links a:focus-visible {

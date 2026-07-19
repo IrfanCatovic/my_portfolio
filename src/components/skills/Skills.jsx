@@ -14,8 +14,8 @@ function Skills() {
           description="Technologies and practices used across frontend, backend, engineering and visual communication work."
         />
         <div className="skills__grid">
-          {skillGroups.map((group) => (
-            <SkillGroup key={group.id} group={group} />
+          {skillGroups.map((group, index) => (
+            <SkillGroup key={group.id} group={group} delay={index * 80} />
           ))}
         </div>
       </div>

@@ -76,6 +76,13 @@
   border: 3px solid rgba(196, 64, 54, 0.18);
   background: var(--surface);
   box-shadow: var(--shadow-md);
+  transition: border-color 0.3s ease, box-shadow 0.3s ease, transform 0.35s ease;
+}
+
+.hero__photo-frame:hover {
+  border-color: rgba(196, 64, 54, 0.42);
+  box-shadow: var(--shadow-lg);
+  transform: translateY(-3px);
 }
 
 .hero__photo {
@@ -85,6 +92,11 @@
   border-radius: 50%;
   object-fit: cover;
   object-position: center 18%;
+  transition: transform 0.45s ease;
+}
+
+.hero__photo-frame:hover .hero__photo {
+  transform: scale(1.03);
 }
 
 @media screen and (min-width: 900px) {
@@ -105,29 +117,58 @@
 }
 
 @media (prefers-reduced-motion: no-preference) {
-  .reveal {
-    animation: fade-up 0.7s ease both;
+  .hero-animate {
+    animation: hero-fade-up 0.7s cubic-bezier(0.22, 1, 0.36, 1) both;
   }
 
-  .reveal--delay {
-    animation-delay: 0.12s;
+  .hero-animate--1 {
+    animation-delay: 0.05s;
+  }
+
+  .hero-animate--2 {
+    animation-delay: 0.14s;
+  }
+
+  .hero-animate--3 {
+    animation-delay: 0.22s;
+  }
+
+  .hero-animate--4 {
+    animation-delay: 0.3s;
+  }
+
+  .hero-animate--5 {
+    animation-delay: 0.38s;
+  }
+
+  .hero-animate--6 {
+    animation-delay: 0.28s;
   }
 }
 
-@keyframes fade-up {
+@keyframes hero-fade-up {
   from {
     opacity: 0;
-    transform: translateY(16px);
+    transform: translateY(18px);
   }
   to {
     opacity: 1;
-    transform: translateY(0);
+    transform: none;
   }
 }
 
 @media (prefers-reduced-motion: reduce) {
-  .reveal,
-  .reveal--delay {
+  .hero-animate {
     animation: none;
+  }
+
+  .hero__photo-frame,
+  .hero__photo {
+    transition: none;
+  }
+
+  .hero__photo-frame:hover,
+  .hero__photo-frame:hover .hero__photo {
+    transform: none;
   }
 }
