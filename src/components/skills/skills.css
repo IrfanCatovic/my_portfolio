@@ -9,13 +9,17 @@
   border-radius: 1rem;
   background: var(--surface);
   box-shadow: var(--shadow-sm);
-  transition: transform 0.3s ease, box-shadow 0.3s ease,
-    border-color 0.3s ease;
+  transition: box-shadow 0.3s ease, border-color 0.3s ease,
+    background-color 0.3s ease;
 }
 
 .skill-group.is-visible:hover {
-  transform: translateY(-3px);
-  border-color: rgba(196, 64, 54, 0.2);
+  border-color: rgba(196, 64, 54, 0.22);
+  background: linear-gradient(
+    165deg,
+    rgba(196, 64, 54, 0.04),
+    var(--surface) 55%
+  );
   box-shadow: var(--shadow-md);
 }
 
@@ -44,9 +48,5 @@
 @media (prefers-reduced-motion: reduce) {
   .skill-group {
     transition: none;
-  }
-
-  .skill-group.is-visible:hover {
-    transform: none;
   }
 }

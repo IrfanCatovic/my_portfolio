@@ -19,13 +19,44 @@
 }
 
 .section-heading__title {
+  position: relative;
+  display: inline-block;
   margin-bottom: 0.75rem;
+  padding-bottom: 0.55rem;
   font-family: var(--display-font);
   font-size: clamp(1.85rem, 2.6vw, 2.5rem);
   font-weight: 650;
   letter-spacing: -0.03em;
   color: var(--title-color);
   line-height: 1.12;
+}
+
+.section-heading__title::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 2.5rem;
+  height: 2px;
+  border-radius: 999px;
+  background: var(--accent);
+  transform: scaleX(0);
+  transform-origin: left center;
+  transition: transform 0.55s cubic-bezier(0.22, 1, 0.36, 1) 0.12s;
+}
+
+.section-heading.is-visible .section-heading__title::after {
+  transform: scaleX(1);
+}
+
+.section-heading--center .section-heading__title::after {
+  left: 50%;
+  transform: translateX(-50%) scaleX(0);
+  transform-origin: center;
+}
+
+.section-heading--center.is-visible .section-heading__title::after {
+  transform: translateX(-50%) scaleX(1);
 }
 
 .section-heading__description {
@@ -73,6 +104,12 @@
 .btn--primary:hover:not(:disabled) {
   background: var(--accent-strong);
   transform: translateY(-1px);
+  box-shadow: 0 14px 28px rgba(196, 64, 54, 0.22);
+}
+
+.btn--primary:active:not(:disabled) {
+  transform: translateY(0);
+  box-shadow: 0 6px 16px rgba(196, 64, 54, 0.16);
 }
 
 .btn--secondary {
@@ -84,6 +121,12 @@
 .btn--secondary:hover:not(:disabled) {
   border-color: var(--accent);
   color: var(--accent);
+  background: rgba(196, 64, 54, 0.04);
+  transform: translateY(-1px);
+}
+
+.btn--secondary:active:not(:disabled) {
+  transform: translateY(0);
 }
 
 .btn--ghost {
@@ -128,6 +171,10 @@
   transform: translateY(-1px);
 }
 
+.skill-group.is-visible:hover .tag {
+  border-color: rgba(196, 64, 54, 0.2);
+}
+
 .badge {
   display: inline-flex;
   align-items: center;
@@ -163,12 +210,27 @@
 
 @media (prefers-reduced-motion: reduce) {
   .btn,
-  .tag {
+  .tag,
+  .section-heading__title::after {
     transition: none;
   }
 
   .btn--primary:hover:not(:disabled),
+  .btn--secondary:hover:not(:disabled),
   .tag:hover {
     transform: none;
+  }
+
+  .section-heading__title::after,
+  .section-heading--center .section-heading__title::after,
+  .section-heading.is-visible .section-heading__title::after,
+  .section-heading--center.is-visible .section-heading__title::after {
+    transform: none;
+    opacity: 1;
+  }
+
+  .section-heading--center .section-heading__title::after {
+    left: 50%;
+    transform: translateX(-50%);
   }
 }

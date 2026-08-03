@@ -10,6 +10,7 @@ function Hero() {
         <div className="hero__content">
           <h1 id="hero-name" className="hero__name hero-animate hero-animate--1">
             {site.name}
+            <span className="hero__name-accent" aria-hidden="true" />
           </h1>
           <p className="hero__title hero-animate hero-animate--2">{site.title}</p>
           <p className="hero__support hero-animate hero-animate--3">
