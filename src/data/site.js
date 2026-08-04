@@ -7,7 +7,7 @@ export const site = {
   email: "catovicc84@gmail.com",
   github: "https://github.com/IrfanCatovic",
   linkedin: "https://www.linkedin.com/in/irfan-catovic/",
-  designPortfolio: "https://irfancatovic.my.canva.site/have-fun",
+  designPortfolio: "https://irfancatovic.my.canva.site/portfolio-irfan-catovic",
   heroSupport:
     "I build practical web applications and internal business systems, combining reliable backend business logic with responsive frontend experiences and strong product thinking.",
   aboutIntro:
