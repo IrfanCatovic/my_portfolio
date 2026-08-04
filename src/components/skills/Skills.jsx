@@ -5,7 +5,7 @@ import "./skills.css";
 
 function Skills() {
   return (
-    <section className="section skills" id="skills" aria-labelledby="skills-title">
+    <section className="section section--band skills" id="skills" aria-labelledby="skills-title">
       <div className="container">
         <SectionHeading
           id="skills-title"

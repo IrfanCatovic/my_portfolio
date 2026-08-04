@@ -10,7 +10,7 @@ import "./projects.css";
 function Projects() {
   return (
     <section
-      className="section projects"
+      className="section section--band projects"
       id="projects"
       aria-labelledby="projects-title"
     >

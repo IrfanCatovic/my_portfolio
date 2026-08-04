@@ -1,16 +1,16 @@
 .projects__primary {
   display: grid;
-  gap: 1.35rem;
+  gap: 1.5rem;
 }
 
 .projects__supporting {
   display: grid;
-  gap: 1.15rem;
-  margin-top: 1.35rem;
+  gap: 1.25rem;
+  margin-top: 1.5rem;
 }
 
 .projects__additional {
-  margin-top: 3rem;
+  margin-top: 3.5rem;
 }
 
 .projects__additional .section-heading {
@@ -19,14 +19,14 @@
 
 .projects__additional-grid {
   display: grid;
-  gap: 1.1rem;
+  gap: 1.2rem;
   align-items: stretch;
 }
 
 @media screen and (min-width: 768px) {
   .projects__supporting {
     grid-template-columns: repeat(2, minmax(0, 1fr));
-    gap: 1.25rem;
+    gap: 1.35rem;
   }
 
   .projects__additional-grid {
@@ -36,6 +36,6 @@
 
 @media screen and (min-width: 1024px) {
   .projects__primary {
-    gap: 1.5rem;
+    gap: 1.75rem;
   }
 }

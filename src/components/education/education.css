@@ -13,24 +13,31 @@
 
 .education__list,
 .education__certificates {
-  padding: 1.15rem 1.25rem;
+  padding: 1.25rem 1.35rem;
   border: 1px solid var(--border);
-  border-radius: 0.9rem;
-  background: var(--surface);
+  border-radius: var(--border-radius);
+  background: rgba(255, 255, 255, 0.78);
   box-shadow: var(--shadow-sm);
-  transition: box-shadow 0.3s ease, border-color 0.3s ease;
+  transition: box-shadow 0.3s ease, border-color 0.3s ease,
+    transform 0.3s var(--ease-out);
 }
 
 .education__list.is-visible:hover,
 .education__certificates.is-visible:hover {
-  border-color: rgba(196, 64, 54, 0.2);
+  border-color: rgba(196, 64, 54, 0.22);
   box-shadow: var(--shadow-md);
+  transform: translateY(-2px);
 }
 
 @media (prefers-reduced-motion: reduce) {
   .education__list,
   .education__certificates {
     transition: none;
+  }
+
+  .education__list.is-visible:hover,
+  .education__certificates.is-visible:hover {
+    transform: none;
   }
 }
 

@@ -3,6 +3,7 @@ export const site = {
   initials: "IĆ",
   title: "Full Stack Developer — React, TypeScript & Golang",
   location: "Tutin, Serbia · Sarajevo · Remote",
+  availability: "Open to opportunities",
   email: "catovicc84@gmail.com",
   github: "https://github.com/IrfanCatovic",
   linkedin: "https://www.linkedin.com/in/irfan-catovic/",

@@ -1,68 +1,90 @@
 .hero {
   position: relative;
   overflow: hidden;
-  padding-top: 2.5rem;
-  padding-bottom: 2.75rem;
+  padding-top: 2.75rem;
+  padding-bottom: 3.25rem;
+  min-height: min(88vh, 52rem);
+  display: flex;
+  align-items: center;
 }
 
 .hero::before {
   content: "";
   position: absolute;
-  inset: -10% -5%;
+  inset: -12% -8%;
   background:
-    radial-gradient(circle at 12% 18%, rgba(196, 64, 54, 0.09), transparent 34%),
-    radial-gradient(circle at 88% 10%, rgba(45, 74, 94, 0.07), transparent 30%);
+    radial-gradient(circle at 14% 20%, rgba(196, 64, 54, 0.1), transparent 36%),
+    radial-gradient(circle at 86% 12%, rgba(45, 74, 94, 0.07), transparent 32%),
+    radial-gradient(circle at 70% 80%, rgba(196, 64, 54, 0.04), transparent 40%);
   pointer-events: none;
 }
 
 .hero__grid {
   position: relative;
   display: grid;
-  gap: 2rem;
+  gap: 2.5rem;
   align-items: center;
+  width: 100%;
+}
+
+.hero__status {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.55rem;
+  margin-bottom: 1.15rem;
+  padding: 0.4rem 0.85rem 0.4rem 0.7rem;
+  width: fit-content;
+  border: 1px solid rgba(196, 64, 54, 0.16);
+  border-radius: 999px;
+  background: rgba(255, 255, 255, 0.72);
+  color: var(--title-color);
+  font-size: 0.8125rem;
+  font-weight: var(--font-semibold);
+  letter-spacing: 0.01em;
+  backdrop-filter: blur(8px);
+  box-shadow: var(--shadow-sm);
+}
+
+.hero__status-dot {
+  width: 0.5rem;
+  height: 0.5rem;
+  border-radius: 50%;
+  background: #1f9d6a;
+  box-shadow: 0 0 0 0 rgba(31, 157, 106, 0.45);
 }
 
 .hero__name {
-  margin-bottom: 0.65rem;
+  margin-bottom: 0.85rem;
   font-family: var(--display-font);
-  font-size: clamp(2.75rem, 5.5vw, 4rem);
+  font-size: clamp(3rem, 7vw, 4.6rem);
   font-weight: 700;
-  letter-spacing: -0.04em;
-  line-height: 1.02;
+  letter-spacing: -0.045em;
+  line-height: 0.98;
   color: var(--title-color);
-}
-
-.hero__name-accent {
-  display: block;
-  width: 3.25rem;
-  height: 3px;
-  margin-top: 0.85rem;
-  border-radius: 999px;
-  background: var(--accent);
-  transform-origin: left center;
 }
 
 .hero__title {
-  margin-bottom: 1rem;
-  max-width: 36rem;
-  color: var(--title-color);
-  font-size: clamp(1.25rem, 2.2vw, 1.55rem);
+  margin-bottom: 1.1rem;
+  max-width: 34rem;
+  color: var(--accent-strong);
+  font-size: clamp(1.05rem, 1.8vw, 1.2rem);
   font-weight: var(--font-semibold);
-  line-height: 1.35;
+  line-height: 1.45;
+  letter-spacing: -0.01em;
 }
 
 .hero__support {
-  max-width: 40rem;
-  margin-bottom: 0.85rem;
+  max-width: 38rem;
+  margin-bottom: 0.95rem;
   color: var(--text-color);
-  font-size: clamp(1.0625rem, 1.5vw, 1.125rem);
+  font-size: clamp(1.05rem, 1.4vw, 1.125rem);
   line-height: 1.75;
 }
 
 .hero__location {
-  margin-bottom: 1.5rem;
+  margin-bottom: 1.75rem;
   color: var(--text-muted);
-  font-size: 1rem;
+  font-size: 0.975rem;
 }
 
 .hero__actions {
@@ -73,45 +95,51 @@
 
 .hero__media {
   justify-self: center;
-  width: min(100%, 15.5rem);
+  width: min(100%, 18rem);
+}
+
+.hero__photo-wrap {
+  position: relative;
+}
+
+.hero__photo-accent {
+  position: absolute;
+  inset: 0.85rem -0.85rem -0.85rem 0.85rem;
+  border-radius: 1.6rem;
+  border: 1.5px solid rgba(196, 64, 54, 0.28);
+  background: linear-gradient(
+    145deg,
+    rgba(196, 64, 54, 0.08),
+    rgba(45, 74, 94, 0.05)
+  );
+  z-index: 0;
 }
 
 .hero__photo-frame {
   position: relative;
+  z-index: 1;
   width: 100%;
-  aspect-ratio: 1 / 1;
-  padding: 0.35rem;
-  border-radius: 50%;
+  aspect-ratio: 4 / 5;
   overflow: hidden;
-  border: 3px solid rgba(196, 64, 54, 0.18);
-  background: var(--surface);
-  box-shadow: var(--shadow-md);
-  transition: border-color 0.35s ease, box-shadow 0.35s ease, transform 0.35s ease;
-}
-
-.hero__photo-frame::after {
-  content: "";
-  position: absolute;
-  inset: 0;
-  border-radius: 50%;
-  box-shadow: inset 0 0 0 1px rgba(255, 255, 255, 0.35);
-  pointer-events: none;
+  border-radius: 1.5rem;
+  border: 1px solid rgba(255, 255, 255, 0.7);
+  background: var(--surface-muted);
+  box-shadow: var(--shadow-lg);
+  transition: transform 0.4s var(--ease-out), box-shadow 0.4s ease;
 }
 
 .hero__photo-frame:hover {
-  border-color: rgba(196, 64, 54, 0.42);
-  box-shadow: var(--shadow-lg);
-  transform: translateY(-4px);
+  transform: translateY(-5px);
+  box-shadow: 0 20px 48px rgba(18, 23, 30, 0.14);
 }
 
 .hero__photo {
   display: block;
   width: 100%;
   height: 100%;
-  border-radius: 50%;
   object-fit: cover;
   object-position: center 18%;
-  transition: transform 0.5s cubic-bezier(0.22, 1, 0.36, 1);
+  transition: transform 0.55s var(--ease-out);
 }
 
 .hero__photo-frame:hover .hero__photo {
@@ -120,18 +148,18 @@
 
 @media screen and (min-width: 900px) {
   .hero {
-    padding-top: 3rem;
-    padding-bottom: 3.25rem;
+    padding-top: 3.5rem;
+    padding-bottom: 4rem;
   }
 
   .hero__grid {
-    grid-template-columns: minmax(0, 1.25fr) minmax(14rem, 0.55fr);
-    gap: 2.5rem;
+    grid-template-columns: minmax(0, 1.2fr) minmax(15rem, 0.7fr);
+    gap: 3.5rem;
   }
 
   .hero__media {
     justify-self: end;
-    width: min(100%, 14.5rem);
+    width: min(100%, 19rem);
   }
 }
 
@@ -140,20 +168,28 @@
     animation: hero-wash 18s ease-in-out infinite alternate;
   }
 
+  .hero__status-dot {
+    animation: hero-pulse 2.2s ease-out infinite;
+  }
+
   .hero-animate {
-    animation: hero-fade-up 0.75s cubic-bezier(0.22, 1, 0.36, 1) both;
+    animation: hero-fade-up 0.8s var(--ease-out) both;
+  }
+
+  .hero-animate--0 {
+    animation-delay: 0.02s;
   }
 
   .hero-animate--1 {
-    animation-delay: 0.05s;
+    animation-delay: 0.08s;
   }
 
   .hero-animate--2 {
-    animation-delay: 0.14s;
+    animation-delay: 0.16s;
   }
 
   .hero-animate--3 {
-    animation-delay: 0.22s;
+    animation-delay: 0.24s;
   }
 
   .hero-animate--4 {
@@ -165,15 +201,11 @@
   }
 
   .hero-animate--6 {
-    animation-delay: 0.28s;
+    animation-delay: 0.22s;
   }
 
-  .hero__name-accent {
-    animation: hero-accent-draw 0.7s cubic-bezier(0.22, 1, 0.36, 1) 0.45s both;
-  }
-
-  .hero__photo-frame {
-    animation: hero-float 5.5s ease-in-out 0.9s infinite;
+  .hero__photo-wrap {
+    animation: hero-float 6s ease-in-out 0.8s infinite;
   }
 
   .hero__photo-frame:hover {
@@ -184,22 +216,11 @@
 @keyframes hero-fade-up {
   from {
     opacity: 0;
-    transform: translateY(18px);
+    transform: translateY(22px);
   }
   to {
     opacity: 1;
     transform: none;
-  }
-}
-
-@keyframes hero-accent-draw {
-  from {
-    opacity: 0;
-    transform: scaleX(0);
-  }
-  to {
-    opacity: 1;
-    transform: scaleX(1);
   }
 }
 
@@ -209,7 +230,7 @@
     transform: translateY(0);
   }
   50% {
-    transform: translateY(-6px);
+    transform: translateY(-8px);
   }
 }
 
@@ -218,14 +239,26 @@
     transform: translate3d(0, 0, 0) scale(1);
   }
   to {
-    transform: translate3d(2%, 1.5%, 0) scale(1.04);
+    transform: translate3d(2.5%, 1.5%, 0) scale(1.05);
+  }
+}
+
+@keyframes hero-pulse {
+  0% {
+    box-shadow: 0 0 0 0 rgba(31, 157, 106, 0.45);
+  }
+  70% {
+    box-shadow: 0 0 0 8px rgba(31, 157, 106, 0);
+  }
+  100% {
+    box-shadow: 0 0 0 0 rgba(31, 157, 106, 0);
   }
 }
 
 @media (prefers-reduced-motion: reduce) {
   .hero-animate,
-  .hero__name-accent,
-  .hero__photo-frame {
+  .hero__photo-wrap,
+  .hero__status-dot {
     animation: none;
   }
 

@@ -8,10 +8,15 @@ function Hero() {
     <section className="hero section" id="home" aria-labelledby="hero-name">
       <div className="container hero__grid">
         <div className="hero__content">
+          <p className="hero__status hero-animate hero-animate--0">
+            <span className="hero__status-dot" aria-hidden="true" />
+            {site.availability}
+          </p>
+
           <h1 id="hero-name" className="hero__name hero-animate hero-animate--1">
             {site.name}
-            <span className="hero__name-accent" aria-hidden="true" />
           </h1>
+
           <p className="hero__title hero-animate hero-animate--2">{site.title}</p>
           <p className="hero__support hero-animate hero-animate--3">
             {site.heroSupport}
@@ -29,14 +34,17 @@ function Hero() {
         </div>
 
         <div className="hero__media hero-animate hero-animate--6">
-          <div className="hero__photo-frame">
-            <img
-              src={selfie}
-              alt={`${site.name}, full stack developer`}
-              className="hero__photo"
-              width="320"
-              height="320"
-            />
+          <div className="hero__photo-wrap">
+            <div className="hero__photo-accent" aria-hidden="true" />
+            <div className="hero__photo-frame">
+              <img
+                src={selfie}
+                alt={`${site.name}, full stack developer`}
+                className="hero__photo"
+                width="400"
+                height="480"
+              />
+            </div>
           </div>
         </div>
       </div>

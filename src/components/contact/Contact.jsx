@@ -111,7 +111,7 @@ function Contact() {
 
   return (
     <section
-      className="section contact"
+      className="section section--band contact"
       id="contact"
       aria-labelledby="contact-title"
     >
