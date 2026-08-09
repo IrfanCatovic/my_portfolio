@@ -25,8 +25,10 @@
   padding: 1.4rem 1.4rem 1.4rem 1.35rem;
   border: 1px solid var(--border);
   border-radius: var(--border-radius);
-  background: rgba(255, 255, 255, 0.78);
-  box-shadow: var(--shadow-sm);
+  background: rgba(255, 255, 255, 0.84);
+  box-shadow:
+    0 1px 0 rgba(255, 255, 255, 0.9) inset,
+    var(--shadow-sm);
   overflow: hidden;
   transition: transform 0.35s var(--ease-out), box-shadow 0.3s ease,
     border-color 0.3s ease;
@@ -44,10 +46,31 @@
   letter-spacing: 0.04em;
 }
 
+.about__strength-card::after {
+  content: "";
+  position: absolute;
+  inset: auto 0 0 0;
+  height: 2px;
+  background: linear-gradient(
+    90deg,
+    transparent,
+    rgba(196, 64, 54, 0.35),
+    transparent
+  );
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
 .about__strength-card.is-visible:hover {
   transform: translateY(-4px);
   border-color: rgba(196, 64, 54, 0.25);
-  box-shadow: var(--shadow-md);
+  box-shadow:
+    0 1px 0 rgba(255, 255, 255, 0.95) inset,
+    var(--shadow-md);
+}
+
+.about__strength-card.is-visible:hover::after {
+  opacity: 1;
 }
 
 @media (prefers-reduced-motion: reduce) {

@@ -45,13 +45,15 @@
   width: fit-content;
   border: 1px solid rgba(196, 64, 54, 0.16);
   border-radius: 999px;
-  background: rgba(255, 255, 255, 0.72);
+  background: rgba(255, 255, 255, 0.78);
   color: var(--title-color);
   font-size: 0.75rem;
   font-weight: var(--font-semibold);
   letter-spacing: 0.01em;
   backdrop-filter: blur(8px);
-  box-shadow: var(--shadow-sm);
+  box-shadow:
+    0 1px 0 rgba(255, 255, 255, 0.8) inset,
+    var(--shadow-sm);
 }
 
 .hero__status-dot {
@@ -129,6 +131,7 @@
     rgba(196, 64, 54, 0.08),
     rgba(45, 74, 94, 0.05)
   );
+  box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.35);
   z-index: 0;
 }
 
@@ -139,15 +142,26 @@
   aspect-ratio: 4 / 5;
   overflow: hidden;
   border-radius: 1.15rem;
-  border: 1px solid rgba(255, 255, 255, 0.7);
+  border: 1px solid rgba(255, 255, 255, 0.75);
   background: var(--surface-muted);
-  box-shadow: var(--shadow-md);
+  box-shadow: var(--shadow-photo);
   transition: transform 0.4s var(--ease-out), box-shadow 0.4s ease;
+}
+
+.hero__photo-frame::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  border-radius: inherit;
+  box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.45);
+  pointer-events: none;
 }
 
 .hero__photo-frame:hover {
   transform: translateY(-4px);
-  box-shadow: var(--shadow-lg);
+  box-shadow:
+    0 12px 28px rgba(18, 23, 30, 0.1),
+    0 28px 56px rgba(196, 64, 54, 0.14);
 }
 
 .hero__photo {

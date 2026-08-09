@@ -62,9 +62,11 @@
 }
 
 .experience-item.is-visible:hover .experience-item__inner {
-  background: rgba(255, 255, 255, 0.78);
+  background: rgba(255, 255, 255, 0.9);
   border-color: var(--border);
-  box-shadow: var(--shadow-sm);
+  box-shadow:
+    0 1px 0 rgba(255, 255, 255, 0.9) inset,
+    var(--shadow-sm);
 }
 
 .experience-item__role {

@@ -10,8 +10,10 @@
   border-radius: calc(var(--border-radius) + 0.15rem);
   background:
     radial-gradient(circle at 0% 0%, rgba(196, 64, 54, 0.07), transparent 42%),
-    rgba(255, 255, 255, 0.9);
-  box-shadow: var(--shadow-md);
+    rgba(255, 255, 255, 0.92);
+  box-shadow:
+    0 1px 0 rgba(255, 255, 255, 0.95) inset,
+    var(--shadow-lg);
   backdrop-filter: blur(8px);
 }
 
@@ -115,6 +117,7 @@
   font: inherit;
   font-size: 1rem;
   line-height: 1.45;
+  box-shadow: 0 1px 0 rgba(255, 255, 255, 0.8) inset;
   transition: border-color 0.2s ease, box-shadow 0.2s ease,
     background-color 0.2s ease;
 }
