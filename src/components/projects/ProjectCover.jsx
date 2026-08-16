@@ -1,12 +1,22 @@
-function ComingSoonCover({ title }) {
+function ComingSoonCover({ title, privateProject }) {
   return (
     <div
-      className="project-cover project-cover--coming-soon"
+      className={`project-cover project-cover--coming-soon${
+        privateProject ? " project-cover--private" : ""
+      }`}
       role="img"
-      aria-label={`${title} screenshot coming soon`}
+      aria-label={
+        privateProject
+          ? `${title} — private client system`
+          : `${title} screenshot coming soon`
+      }
     >
-      <p className="project-cover__coming-label">Screenshot</p>
-      <p className="project-cover__coming-title">Coming soon</p>
+      <p className="project-cover__coming-label">
+        {privateProject ? "Private" : "Preview"}
+      </p>
+      <p className="project-cover__coming-title">
+        {privateProject ? "Client system" : "Screenshot soon"}
+      </p>
       <p className="project-cover__coming-project">{title}</p>
     </div>
   );
@@ -20,12 +30,18 @@ function ProjectCover({ project }) {
         alt={project.imageAlt}
         className="project-card__image"
         loading="lazy"
+        decoding="async"
       />
     );
   }
 
   if (project.coverStyle === "coming-soon") {
-    return <ComingSoonCover title={project.title} />;
+    return (
+      <ComingSoonCover
+        title={project.title}
+        privateProject={project.privateProject}
+      />
+    );
   }
 
   return (

@@ -104,7 +104,7 @@ function Contact() {
     } catch {
       setStatus("error");
       setStatusMessage(
-        "The contact form could not send right now. Please email me directly at catovicc84@gmail.com."
+        `The contact form could not send right now. Please email me directly at ${site.email}.`
       );
     }
   };
@@ -119,7 +119,7 @@ function Contact() {
         <div className="contact__intro">
           <SectionHeading
             id="contact-title"
-            eyebrow="Contact"
+            eyebrow="Say hello"
             title={site.contactHeading}
             description={site.contactText}
           />

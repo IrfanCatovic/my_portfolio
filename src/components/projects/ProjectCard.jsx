@@ -80,7 +80,9 @@ function ProjectCard({ project, variant = "supporting", delay = 0 }) {
               Live Project
             </Button>
           ) : project.privateProject ? (
-            <span className="project-card__private-note">Private project</span>
+            <a href="#contact" className="project-card__private-note">
+              Walkthrough on request
+            </a>
           ) : null}
           {project.githubUrl ? (
             <Button

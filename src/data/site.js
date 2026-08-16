@@ -9,9 +9,9 @@ export const site = {
   linkedin: "https://www.linkedin.com/in/irfan-catovic/",
   designPortfolio: "https://irfancatovic.my.canva.site/portfolio-irfan-catovic",
   heroSupport:
-    "I build practical web applications and internal business systems, combining reliable backend business logic with responsive frontend experiences and strong product thinking.",
+    "I build practical web applications and internal business systems — reliable backend logic, clear interfaces, and product decisions that hold up in real use.",
   aboutIntro:
-    "I am a full-stack developer focused on building practical products and internal systems that solve real operational problems. I work across React, TypeScript, Golang, PostgreSQL and REST APIs — from user needs and business rules through data flow, frontend usability, backend architecture and deployment.",
+    "I care as much about the workflow as the code: the rules, edge cases and daily habits that make software trustworthy. I work end to end across React, TypeScript, Golang, PostgreSQL and REST APIs — from product thinking through data, UI and deployment.",
   strengths: [
     {
       title: "Product and business thinking",
@@ -40,5 +40,6 @@ export const navLinks = [
   { id: "experience", label: "Experience" },
   { id: "skills", label: "Skills" },
   { id: "about", label: "About" },
+  { id: "education", label: "Education" },
   { id: "contact", label: "Contact" },
 ];

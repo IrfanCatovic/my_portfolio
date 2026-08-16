@@ -9,7 +9,7 @@ function About() {
       <div className="container about__content">
         <SectionHeading
           id="about-title"
-          eyebrow="About"
+          eyebrow="Profile"
           title="Building practical software end to end"
         />
         <Reveal as="p" className="about__text">

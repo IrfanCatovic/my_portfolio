@@ -18,8 +18,8 @@ function Projects() {
         <SectionHeading
           id="projects-title"
           eyebrow="Selected work"
-          title="Featured Projects"
-          description="Founder-built products, internal business systems and production team work."
+          title="Projects"
+          description="Founder-built products, internal systems, and production team work."
         />
 
         <div className="projects__primary">
@@ -46,8 +46,8 @@ function Projects() {
 
         <div className="projects__additional">
           <SectionHeading
-            title="Additional Projects"
-            description="Smaller applications demonstrating frontend craft and API integration."
+            title="Also worth a look"
+            description="Smaller apps where I explored frontend craft and API integration."
           />
           <div className="projects__additional-grid">
             {additionalProjects.map((project, index) => (

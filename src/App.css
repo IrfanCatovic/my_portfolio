@@ -8,10 +8,14 @@
   background: var(--title-color);
   color: #fff;
   font-weight: var(--font-semibold);
+  box-shadow: var(--shadow-md);
+  transition: top 0.2s ease;
 }
 
-.skip-link:focus {
+.skip-link:focus-visible {
   top: 1rem;
+  outline: 2px solid var(--accent);
+  outline-offset: 3px;
 }
 
 .main {

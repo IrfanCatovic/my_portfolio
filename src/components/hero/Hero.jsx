@@ -43,6 +43,8 @@ function Hero() {
                 className="hero__photo"
                 width="400"
                 height="480"
+                decoding="async"
+                fetchPriority="high"
               />
             </div>
           </div>

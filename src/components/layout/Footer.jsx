@@ -20,13 +20,20 @@ function Footer() {
           >
             GitHub
           </a>
+          <a
+            href={site.linkedin}
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            LinkedIn
+          </a>
           <a href={`mailto:${site.email}`}>{site.email}</a>
           <a
             href={site.designPortfolio}
             target="_blank"
             rel="noopener noreferrer"
           >
-            Design portfolio
+            Design
           </a>
         </div>
 

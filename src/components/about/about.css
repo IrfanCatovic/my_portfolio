@@ -30,8 +30,7 @@
     0 1px 0 rgba(255, 255, 255, 0.9) inset,
     var(--shadow-sm);
   overflow: hidden;
-  transition: transform 0.35s var(--ease-out), box-shadow 0.3s ease,
-    border-color 0.3s ease;
+  transition: box-shadow 0.3s ease, border-color 0.3s ease;
 }
 
 .about__strength-card::before {
@@ -62,7 +61,6 @@
 }
 
 .about__strength-card.is-visible:hover {
-  transform: translateY(-4px);
   border-color: rgba(196, 64, 54, 0.25);
   box-shadow:
     0 1px 0 rgba(255, 255, 255, 0.95) inset,
@@ -74,12 +72,9 @@
 }
 
 @media (prefers-reduced-motion: reduce) {
-  .about__strength-card {
+  .about__strength-card,
+  .about__strength-card::after {
     transition: none;
-  }
-
-  .about__strength-card.is-visible:hover {
-    transform: none;
   }
 }
 

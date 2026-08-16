@@ -11,7 +11,7 @@ function Skills() {
           id="skills-title"
           eyebrow="Toolkit"
           title="Skills"
-          description="Technologies and practices used across frontend, backend, engineering and visual communication work."
+          description="What I reach for most often across frontend, backend, and visual work."
         />
         <div className="skills__grid">
           {skillGroups.map((group, index) => (

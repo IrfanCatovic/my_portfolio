@@ -15,7 +15,7 @@ function Experience() {
           id="experience-title"
           eyebrow="Career"
           title="Experience"
-          description="Reverse-chronological overview of product, engineering and supporting creative work."
+          description="Product engineering, operations systems, and creative production work."
         />
         <ol className="experience__list">
           {experience.map((item, index) => (

@@ -12,8 +12,7 @@
   box-shadow:
     0 1px 0 rgba(255, 255, 255, 0.85) inset,
     var(--shadow-sm);
-  transition: border-color 0.3s ease, box-shadow 0.3s ease,
-    transform 0.35s var(--ease-out);
+  transition: border-color 0.3s ease, box-shadow 0.3s ease;
 }
 
 .skill-group.is-visible:hover {
@@ -21,7 +20,6 @@
   box-shadow:
     0 1px 0 rgba(255, 255, 255, 0.9) inset,
     var(--shadow-md);
-  transform: translateY(-2px);
 }
 
 .skill-group__title {
@@ -49,9 +47,5 @@
 @media (prefers-reduced-motion: reduce) {
   .skill-group {
     transition: none;
-  }
-
-  .skill-group.is-visible:hover {
-    transform: none;
   }
 }
