@@ -1,4 +1,5 @@
 import planinerImg from "../assests/work12.png";
+import amKeramikaImg from "../assests/am-keramik.jpeg";
 import muftyImg from "../assests/work-8.JPG";
 import pomirenjeImg from "../assests/pomirenje.PNG";
 import shopImg from "../assests/work11.png";
@@ -67,12 +68,12 @@ export const primaryProjects = [
       "Material UI",
       "PDF generation",
     ],
-    image: null,
-    imageAlt: "AM Keramika project screenshot coming soon",
+    image: amKeramikaImg,
+    imageAlt: "AM Keramika internal operations platform dashboard",
     liveUrl: null,
     githubUrl: null,
     privateProject: true,
-    coverStyle: "coming-soon",
+    coverStyle: null,
   },
 ];
 
