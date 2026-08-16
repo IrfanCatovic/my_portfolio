@@ -1,6 +1,5 @@
 .contact__layout {
-  display: grid;
-  gap: 2rem;
+  max-width: 40rem;
   padding: 1.65rem 1.35rem;
   border: 1px solid var(--border);
   border-radius: calc(var(--border-radius) + 0.15rem);
@@ -13,8 +12,8 @@
   backdrop-filter: blur(8px);
 }
 
-.contact__intro .section-heading {
-  margin-bottom: 1.4rem;
+.contact__layout .section-heading {
+  margin-bottom: 1.5rem;
 }
 
 .contact__details {
@@ -86,88 +85,15 @@
   border-radius: 0.25rem;
 }
 
-.contact__form {
-  display: grid;
-  gap: 0.95rem;
-}
-
-.contact__field {
-  display: grid;
-  gap: 0.4rem;
-}
-
-.contact__field label {
-  color: var(--title-color);
-  font-size: 0.925rem;
-  font-weight: var(--font-semibold);
-}
-
-.contact__field input,
-.contact__field textarea {
-  width: 100%;
-  padding: 0.95rem 1.05rem;
-  border: 1px solid var(--border-strong);
-  border-radius: 0.8rem;
-  background: rgba(255, 255, 255, 0.92);
-  color: var(--title-color);
-  font: inherit;
-  font-size: 1rem;
-  line-height: 1.45;
-  box-shadow: 0 1px 0 rgba(255, 255, 255, 0.8) inset;
-  transition: border-color 0.2s ease, box-shadow 0.2s ease,
-    background-color 0.2s ease;
-}
-
-.contact__field textarea {
-  resize: vertical;
-  min-height: 8.5rem;
-}
-
-.contact__field input:hover,
-.contact__field textarea:hover {
-  border-color: #bbb4a8;
-}
-
-.contact__field input:focus-visible,
-.contact__field textarea:focus-visible {
-  outline: none;
-  border-color: var(--accent);
-  background: #fff;
-  box-shadow: 0 0 0 4px rgba(196, 64, 54, 0.12);
-}
-
-.contact__field input[aria-invalid="true"],
-.contact__field textarea[aria-invalid="true"] {
-  border-color: #b42318;
-}
-
-.contact__error {
-  color: #b42318;
-  font-size: 0.875rem;
-}
-
-.contact__status {
-  margin-top: 0.15rem;
-  font-size: 0.975rem;
-  line-height: 1.55;
-}
-
-.contact__status--success {
-  color: #17684d;
-}
-
-.contact__status--error {
-  color: #b42318;
-}
-
-.contact__status--loading {
-  color: var(--text-muted);
+.contact__actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.75rem;
+  margin-top: 1.5rem;
 }
 
 @media screen and (min-width: 900px) {
   .contact__layout {
-    grid-template-columns: 0.9fr 1.15fr;
-    gap: 2.5rem;
     padding: 2rem 2.1rem;
   }
 }
