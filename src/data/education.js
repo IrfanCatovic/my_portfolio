@@ -17,8 +17,8 @@ export const education = [
 ];
 
 export const certificates = [
-  'ClasterNIT — Basics of C# Programming',
-  'ClasterNIT — ASP.NET Basics and Applications',
-  'TypeScript Full Course — Maximilian Schwarzmüller (Udemy, 2024)',
-  'Go: The Complete Guide — Maximilian Schwarzmüller (Udemy, 2024)',
+  'ClasterNIT - Basics of C# Programming',
+  'ClasterNIT - ASP.NET Basics and Applications',
+  'TypeScript Full Course - Maximilian Schwarzmüller (Udemy, 2024)',
+  'Go: The Complete Guide - Maximilian Schwarzmüller (Udemy, 2024)',
 ];

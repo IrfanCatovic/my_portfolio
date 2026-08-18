@@ -44,7 +44,7 @@ export const primaryProjects = [
   {
     id: "am-keramika",
     tier: "primary",
-    title: "AM Keramika — Internal Business Operations Platform",
+    title: "AM Keramika - Internal Business Operations Platform",
     category: "Internal Business System · Founder Project",
     status: "Private Client Project · In Development",
     description:
@@ -57,8 +57,9 @@ export const primaryProjects = [
       "Role-based access for owners, managers and workers",
     ],
     technologies: [
-      "React",
+      "Next.js",
       "TypeScript",
+      "Node.js",
       "Golang",
       "Gin",
       "PostgreSQL",
@@ -116,16 +117,17 @@ export const supportingProjects = [
     category: "Team Project · Frontend Development",
     status: "Live Product",
     description:
-      "Production public platform with a frontend-focused role — building responsive React/TypeScript interfaces, Redux Toolkit state and REST API integration.",
+      "Production public platform built with a team — Next.js and TypeScript frontend, Redux Toolkit state management and REST API integration with a Golang backend.",
     role: "Frontend Developer",
     highlights: [
-      "React and TypeScript UI development",
+      "Next.js and TypeScript UI development",
       "Redux Toolkit and REST API integration",
       "Responsive pages and predictable data flow",
     ],
     technologies: [
-      "React",
+      "Next.js",
       "TypeScript",
+      "React",
       "Redux Toolkit",
       "Golang",
       "Tailwind CSS",

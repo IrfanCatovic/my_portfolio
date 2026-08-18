@@ -22,6 +22,7 @@ export const skillGroups = [
     title: "Backend",
     skills: [
       "Golang",
+      "Node.js",
       "Gin",
       "GORM",
       "REST APIs",

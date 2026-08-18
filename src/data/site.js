@@ -1,7 +1,7 @@
 export const site = {
   name: "Irfan Ćatović",
   initials: "IĆ",
-  title: "Full Stack Developer — React, TypeScript & Golang",
+  title: "Full Stack Developer — React, Next.js, TypeScript & Node.js",
   location: "Tutin, Serbia · Sarajevo · Remote",
   availability: "Open to opportunities",
   email: "catovicc84@gmail.com",
@@ -9,9 +9,9 @@ export const site = {
   linkedin: "https://www.linkedin.com/in/irfan-catovic/",
   designPortfolio: "https://irfancatovic.my.canva.site/portfolio-irfan-catovic",
   heroSupport:
-    "I build practical web applications and internal business systems — reliable backend logic, clear interfaces, and product decisions that hold up in real use.",
+    "I build practical web applications and internal business systems with React, Next.js, TypeScript, Node.js and Golang — backed by PostgreSQL and MongoDB where each project needs it.",
   aboutIntro:
-    "I care as much about the workflow as the code: the rules, edge cases and daily habits that make software trustworthy. I work end to end across React, TypeScript, Golang, PostgreSQL and REST APIs — from product thinking through data, UI and deployment.",
+    "I care as much about the workflow as the code: the rules, edge cases and daily habits that make software trustworthy. I work end to end across React, Next.js, TypeScript, Node.js, Golang, PostgreSQL, MongoDB and REST APIs — from product thinking through data, UI and deployment.",
   strengths: [
     {
       title: "Product and business thinking",
@@ -31,7 +31,7 @@ export const site = {
   ],
   contactHeading: "Let’s build something useful.",
   contactText:
-    "I am open to full-time, remote and selected freelance opportunities involving React, TypeScript, Golang and practical product development.",
+    "I am open to full-time, remote and selected freelance opportunities involving React, Next.js, TypeScript, Node.js, Golang, PostgreSQL, MongoDB and practical product development.",
 };
 
 export const navLinks = [
