@@ -71,7 +71,7 @@ export const primaryProjects = [
     ],
     image: amKeramikaImg,
     imageAlt: "AM Keramika internal operations platform dashboard",
-    liveUrl: null,
+    liveUrl: "https://www.am-keramika.com",
     githubUrl: null,
     privateProject: true,
     coverStyle: null,
