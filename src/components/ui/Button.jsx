@@ -21,6 +21,11 @@ function Button({
     return (
       <a href={href} className={classes} {...externalProps} {...rest}>
         {children}
+        {external ? (
+          <span className="btn__arrow" aria-hidden="true">
+            ↗
+          </span>
+        ) : null}
       </a>
     );
   }

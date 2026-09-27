@@ -1,4 +1,4 @@
-import { useEffect, useId, useState } from "react";
+import { useEffect, useId, useRef, useState } from "react";
 import { navLinks, site } from "../../data/site";
 import "./navbar.css";
 
@@ -7,12 +7,28 @@ function Navbar() {
   const [scrolled, setScrolled] = useState(false);
   const [activeId, setActiveId] = useState("home");
   const menuId = useId();
+  const progressRef = useRef(null);
 
   useEffect(() => {
-    const onScroll = () => setScrolled(window.scrollY > 12);
+    let frame = 0;
+    const onScroll = () => {
+      setScrolled(window.scrollY > 12);
+      cancelAnimationFrame(frame);
+      frame = requestAnimationFrame(() => {
+        const max =
+          document.documentElement.scrollHeight - window.innerHeight;
+        const progress = max > 0 ? Math.min(window.scrollY / max, 1) : 0;
+        progressRef.current?.style.setProperty("--progress", progress);
+      });
+    };
     onScroll();
     window.addEventListener("scroll", onScroll, { passive: true });
-    return () => window.removeEventListener("scroll", onScroll);
+    window.addEventListener("resize", onScroll);
+    return () => {
+      cancelAnimationFrame(frame);
+      window.removeEventListener("scroll", onScroll);
+      window.removeEventListener("resize", onScroll);
+    };
   }, []);
 
   useEffect(() => {
@@ -114,6 +130,7 @@ function Navbar() {
           />
         ) : null}
       </div>
+      <span ref={progressRef} className="navbar__progress" aria-hidden="true" />
     </header>
   );
 }

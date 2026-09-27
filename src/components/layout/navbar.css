@@ -15,6 +15,20 @@
   background: rgba(248, 246, 242, 0.92);
 }
 
+.navbar__progress {
+  --progress: 0;
+  position: absolute;
+  left: 0;
+  bottom: -1px;
+  width: 100%;
+  height: 2px;
+  background: linear-gradient(90deg, var(--accent), #e0785f);
+  transform: scaleX(var(--progress));
+  transform-origin: left center;
+  pointer-events: none;
+  z-index: 3;
+}
+
 .navbar__inner {
   position: relative;
   display: flex;
@@ -60,7 +74,7 @@
 
 .navbar__brand:hover .navbar__logo {
   background: var(--accent);
-  transform: translateY(-1px);
+  transform: translateY(-1px) rotate(-6deg);
   box-shadow:
     0 1px 0 rgba(255, 255, 255, 0.16) inset,
     0 8px 18px rgba(196, 64, 54, 0.28);
