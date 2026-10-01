@@ -1,3 +1,5 @@
+
+
 export const education = [
   {
     id: 'it-belgrade',
